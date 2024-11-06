@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{CCF81D46-4857-1BEE-5A80-F394C0D3E02C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Procedural_City",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}

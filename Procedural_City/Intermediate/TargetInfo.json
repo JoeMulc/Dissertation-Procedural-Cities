@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Procedural_City",
+			"Path": "..\\Source\\Procedural_City.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Procedural_CityEditor",
+			"Path": "..\\Source\\Procedural_CityEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
