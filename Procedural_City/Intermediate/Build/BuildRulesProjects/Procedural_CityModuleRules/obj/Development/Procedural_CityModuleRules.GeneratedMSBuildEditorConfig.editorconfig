@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Procedural_CityModuleRules
-build_property.ProjectDir = D:\LocalWorkDir\2100609\ProceduralCities\Dissertation-Procedural-Cities\Procedural_City\Intermediate\Build\BuildRulesProjects\Procedural_CityModuleRules\
+build_property.ProjectDir = D:\LocalWorkDir\2100609\ProceduralCity\Dissertation-Procedural-Cities\Procedural_City\Intermediate\Build\BuildRulesProjects\Procedural_CityModuleRules\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

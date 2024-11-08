@@ -62,6 +62,11 @@ public:
 
 	void AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left);
 
+	bool CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current);
+
+	bool CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current);
+
+
 	float randFloat();
 
 

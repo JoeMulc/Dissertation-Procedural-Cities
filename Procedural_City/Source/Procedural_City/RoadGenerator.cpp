@@ -52,9 +52,12 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		propQ.Pop();
 
 		//Need a placement check
+		if (CheckConstraints(finalNetwork, current))
+		{
+			finalNetwork.Push(*current->segment);
+			AddRoads(propQ, current);
 
-		finalNetwork.Push(*current->segment);
-		AddRoads(propQ, current);
+		}
 
 		delete(current->segment);
 		delete(current);
@@ -135,8 +138,12 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 
 }
 
-float ARoadGenerator::randFloat()
+bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
 {
-	return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+	return CheckGlobalConstraints(finalNetwork, current);
 }
 
+bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
+{
+	return true;
+}
