@@ -146,24 +146,30 @@ bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad*
 
 bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
 {
+	//Get centre of proposed road
+	FVector propMid = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
+
+	// For each road in the final network
 	for (const FRoad road : finalNetwork)
 	{
-		FVector midPoint1 = (road.End - road.Start) / 2 + road.Start;
-		FVector midPoint2 = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
-	
-		if (FVector::Dist(midPoint1, midPoint2) < 150)
+		//get centre of final road to be compared
+		FVector finalMid = (road.End - road.Start) / 2 + road.Start;
+		
+		//Check distance based on road size - magic number here fix me!!!!!!!
+		if (FVector::Dist(finalMid, propMid) < 150)
 		{
 			UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
 			return false;
 		}
 	}
 
+	//For each water volume
 	for (AActor* w : water)
 	{
-		FVector centre = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
 		AVolume* waterVolume = Cast<AVolume>(w);
-
-		if (waterVolume->EncompassesPoint(centre, 75.f))
+		
+		//If proposed road is within the volume
+		if (waterVolume->EncompassesPoint(propMid, 75.f))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Water!"));
 			return false;

@@ -5544,3 +5544,8 @@ _MatTransl_3B7A55D3409170328211A060FC2E3BB1E263C720_BBD650804D314CE7A44ADF9BB4F3
 [2024.11.08-15.41.12:779][358]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
 [2024.11.08-15.41.12:779][358]LogContentValidation: Display: Validating asset /Game/NewMap.NewMap
 [2024.11.08-15.41.12:779][358]AssetCheck: /Game/NewMap Validating asset
+[2024.11.08-15.46.05:892][388]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.08-15.46.16:677][596]LogLiveCoding: Display:    Creating library D:\LocalWorkDir\2100609\ProceduralCity\Dissertation-Procedural-Cities\Procedural_City\Binaries\Win64\UnrealEditor-Procedural_City.patch_8.lib and object D:\LocalWorkDir\2100609\ProceduralCity\Dissertation-Procedural-Cities\Procedural_City\Binaries\Win64\UnrealEditor-Procedural_City.patch_8.exp
+[2024.11.08-15.46.17:001][610]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.11.08-15.46.17:540][611]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.08-15.46.17:540][611]LogLiveCoding: Display: Live coding succeeded
