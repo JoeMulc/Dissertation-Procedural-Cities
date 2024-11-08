@@ -61,8 +61,8 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		delete(current->segment);
 		delete(current);
-		UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
-		UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
+		//UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
+		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
 
 	return finalNetwork;
@@ -82,12 +82,12 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		//flip flop for left and right roads
 		if (randFloat() < 0.5)
 		{
-			UE_LOG(LogTemp, Display, TEXT("left road"));
+			//UE_LOG(LogTemp, Display, TEXT("left road"));
 			AddRoadSide(segQ, current, true);
 		}
 		else
 		{
-			UE_LOG(LogTemp, Display, TEXT("left road"));
+			//UE_LOG(LogTemp, Display, TEXT("left road"));
 			AddRoadSide(segQ, current, false);
 		}
 
@@ -97,7 +97,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 
 void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous)
 {
-	UE_LOG(LogTemp, Display, TEXT("ForwardRoad"));
+	//UE_LOG(LogTemp, Display, TEXT("ForwardRoad"));
 
 	FProposedRoad* newPropRoad = new FProposedRoad();
 	FRoad* newSeg = new FRoad();
@@ -145,5 +145,16 @@ bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad*
 
 bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
 {
+	for (FRoad road : finalNetwork)
+	{
+		FVector midPoint1 = (road.End - road.Start) / 2 + road.Start;
+		FVector midPoint2 = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
+	
+		if (FVector::Dist(midPoint1, midPoint2) < 150)
+		{
+			UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
+			return false;
+		}
+	}
 	return true;
 }
