@@ -157,9 +157,17 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 			return false;
 		}
 	}
+
 	for (AActor* w : water)
 	{
-		UE_LOG(LogTemp, Display, TEXT("Water!"));
+		FVector centre = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
+		AVolume* waterVolume = Cast<AVolume>(w);
+
+		if (waterVolume->EncompassesPoint(centre, 75.f))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Water!"));
+			return false;
+		}
 	}
 
 	return true;

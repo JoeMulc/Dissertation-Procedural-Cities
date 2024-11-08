@@ -2792,3 +2792,959 @@ _MatTransl_3B7A55D3409170328211A060FC2E3BB1E263C720_BBD650804D314CE7A44ADF9BB4F3
 [2024.11.08-15.12.06:610][153]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
 [2024.11.08-15.12.06:610][153]LogContentValidation: Display: Validating asset /Game/NewMap.NewMap
 [2024.11.08-15.12.06:610][153]AssetCheck: /Game/NewMap Validating asset
+[2024.11.08-15.22.45:106][  5]LogToolMenus: Warning: Menu item not found: 'OpenMarketplace' for insert: 'ContentBrowser'
+[2024.11.08-15.27.48:019][727]LogToolMenus: Warning: Menu item not found: 'OpenMarketplace' for insert: 'ContentBrowser'
+[2024.11.08-15.35.22:762][603]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.08-15.35.35:011][948]LogLiveCoding: Display:    Creating library D:\LocalWorkDir\2100609\ProceduralCity\Dissertation-Procedural-Cities\Procedural_City\Binaries\Win64\UnrealEditor-Procedural_City.patch_7.lib and object D:\LocalWorkDir\2100609\ProceduralCity\Dissertation-Procedural-Cities\Procedural_City\Binaries\Win64\UnrealEditor-Procedural_City.patch_7.exp
+[2024.11.08-15.35.35:289][954]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2024.11.08-15.35.35:785][955]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.08-15.35.35:785][955]LogLiveCoding: Display: Live coding succeeded
+[2024.11.08-15.35.40:175][392]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.35.40:270][392]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.35.40:270][392]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.35.40:274][392]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 3.969 ms (total: 152.950 ms)
+[2024.11.08-15.35.40:295][392]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.35.40:295][392]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.35.40:303][392]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008249s)
+[2024.11.08-15.35.40:303][392]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.008284s)
+[2024.11.08-15.35.40:381][392]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2024.11.08-15.35.40:382][392]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.35.40:383][392]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.35.40:383][392]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.35.40:383][392]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.35.40:383][392]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.35.40:390][392]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.35.40:390][392]LogWorldPartition: Display: WorldPartition initialize took 6.967 ms (total: 648.475 ms)
+[2024.11.08-15.35.40:390][392]LogPlayLevel: PIE: World Init took: (0.008143s)
+[2024.11.08-15.35.40:678][392]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.35.40:678][392]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.35.40:678][392]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.35.40:678][392]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.35.40:678][392]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.35.40:678][392]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.35.40:679][392]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.35.40:714][392]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.35.40:714][392]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.35.40:714][392]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.35.40:714][392]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.35.40:714][392]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2024.11.08-15.35.40:714][392]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=18
+[2024.11.08-15.35.40:716][392]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2024.11.08-15.35.40:716][392]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2024.11.08-15.35.40:716][392]LogInit: FAudioDevice initialized with ID 18.
+[2024.11.08-15.35.40:716][392]LogAudio: Display: Audio Device (ID: 18) registered with world 'NewMap'.
+[2024.11.08-15.35.40:716][392]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 18
+[2024.11.08-15.35.40:719][392]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.35.40:720][392]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.35.40
+[2024.11.08-15.35.40:720][392]LogWorld: Bringing up level for play took: 0.001524
+[2024.11.08-15.35.40:723][392]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2024.11.08-15.35.40:724][392]LogStreaming: Display: FlushAsyncLoading(): 4 QueuedPackages, 0 AsyncPackages
+[2024.11.08-15.35.40:735][392]LogTemp: Display: Water!
+[2024.11.08-15.35.41:144][392]PIE: Server logged in
+[2024.11.08-15.35.41:145][392]PIE: Play in editor total start time 0.964 seconds.
+[2024.11.08-15.35.49:244][113]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.35.49:244][113]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.35.49:245][113]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.35.49:245][113]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.35.49:245][113]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.35.49:246][113]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.35.49:246][113]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.35.49:246][113]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.35.49:249][113]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.35.49:254][113]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.35.49:273][113]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.08-15.35.49:281][113]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 18
+[2024.11.08-15.35.49:281][113]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.11.08-15.35.49:282][113]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.11.08-15.35.49:290][113]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.35.49:311][113]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2024.11.08-15.35.49:835][114]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2024.11.08-15.36.05:525][896]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.36.05:594][896]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.36.05:594][896]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.36.05:599][896]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.422 ms (total: 157.373 ms)
+[2024.11.08-15.36.05:636][896]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.36.05:636][896]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.05:645][896]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008847s)
+[2024.11.08-15.36.05:645][896]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.008881s)
+[2024.11.08-15.36.05:664][896]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.11.08-15.36.05:669][896]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.36.05:670][896]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.36.05:670][896]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.36.05:670][896]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.36.05:670][896]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.36.05:677][896]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.36.05:677][896]LogWorldPartition: Display: WorldPartition initialize took 7.131 ms (total: 655.606 ms)
+[2024.11.08-15.36.05:677][896]LogPlayLevel: PIE: World Init took: (0.008174s)
+[2024.11.08-15.36.06:003][896]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.36.06:003][896]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.36.06:003][896]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.36.06:003][896]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.36.06:003][896]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.36.06:003][896]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.36.06:005][896]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.36.06:042][896]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.36.06:042][896]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.36.06:042][896]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.36.06:042][896]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.36.06:042][896]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2024.11.08-15.36.06:042][896]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=19
+[2024.11.08-15.36.06:044][896]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2024.11.08-15.36.06:044][896]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2024.11.08-15.36.06:044][896]LogInit: FAudioDevice initialized with ID 19.
+[2024.11.08-15.36.06:044][896]LogAudio: Display: Audio Device (ID: 19) registered with world 'NewMap'.
+[2024.11.08-15.36.06:044][896]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 19
+[2024.11.08-15.36.06:047][896]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.36.06:048][896]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.36.06
+[2024.11.08-15.36.06:049][896]LogWorld: Bringing up level for play took: 0.001468
+[2024.11.08-15.36.06:051][896]LogOnline: OSS: Created online subsystem instance for: :Context_22
+[2024.11.08-15.36.06:053][896]LogStreaming: Display: FlushAsyncLoading(): 1 QueuedPackages, 0 AsyncPackages
+[2024.11.08-15.36.06:057][896]LogTemp: Display: Water!
+[2024.11.08-15.36.06:353][896]PIE: Server logged in
+[2024.11.08-15.36.06:354][896]PIE: Play in editor total start time 0.822 seconds.
+[2024.11.08-15.36.18:853][100]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.18:853][100]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.18:854][100]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.36.18:855][100]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.18:855][100]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.36.18:855][100]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.36.18:855][100]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.36.18:855][100]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.36.18:857][100]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.36.18:862][100]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.18:882][100]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.18:883][100]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 19
+[2024.11.08-15.36.18:883][100]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.11.08-15.36.18:884][100]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.11.08-15.36.18:892][100]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.11.08-15.36.19:357][101]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2024.11.08-15.36.21:291][254]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.36.21:347][254]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.36.21:347][254]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.36.21:351][254]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.090 ms (total: 161.464 ms)
+[2024.11.08-15.36.21:380][254]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.36.21:380][254]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.21:389][254]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008730s)
+[2024.11.08-15.36.21:389][254]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.008764s)
+[2024.11.08-15.36.21:410][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2024.11.08-15.36.21:411][254]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.36.21:412][254]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.36.21:412][254]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.36.21:412][254]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.36.21:412][254]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.36.21:419][254]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.36.21:419][254]LogWorldPartition: Display: WorldPartition initialize took 7.160 ms (total: 662.766 ms)
+[2024.11.08-15.36.21:419][254]LogPlayLevel: PIE: World Init took: (0.008180s)
+[2024.11.08-15.36.21:786][254]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.36.21:786][254]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.36.21:787][254]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.36.21:787][254]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.36.21:787][254]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.36.21:787][254]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.36.21:788][254]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.36.21:822][254]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.36.21:822][254]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.36.21:822][254]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.36.21:822][254]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.36.21:823][254]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2024.11.08-15.36.21:823][254]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=20
+[2024.11.08-15.36.21:825][254]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2024.11.08-15.36.21:825][254]LogInit: FAudioDevice initialized with ID 20.
+[2024.11.08-15.36.21:825][254]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2024.11.08-15.36.21:825][254]LogAudio: Display: Audio Device (ID: 20) registered with world 'NewMap'.
+[2024.11.08-15.36.21:825][254]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 20
+[2024.11.08-15.36.21:827][254]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.36.21:829][254]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.36.21
+[2024.11.08-15.36.21:829][254]LogWorld: Bringing up level for play took: 0.001463
+[2024.11.08-15.36.21:831][254]LogOnline: OSS: Created online subsystem instance for: :Context_23
+[2024.11.08-15.36.21:833][254]LogStreaming: Display: FlushAsyncLoading(): 1 QueuedPackages, 0 AsyncPackages
+[2024.11.08-15.36.21:837][254]LogTemp: Display: Water!
+[2024.11.08-15.36.22:236][254]PIE: Server logged in
+[2024.11.08-15.36.22:237][254]PIE: Play in editor total start time 0.94 seconds.
+[2024.11.08-15.36.23:536][302]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.23:537][302]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.23:537][302]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.36.23:538][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.23:538][302]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.36.23:538][302]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.36.23:538][302]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.36.23:538][302]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.36.23:541][302]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.36.23:546][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.23:566][302]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.23:567][302]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 20
+[2024.11.08-15.36.23:567][302]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.11.08-15.36.23:568][302]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.11.08-15.36.23:576][302]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2024.11.08-15.36.23:975][303]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2024.11.08-15.36.24:286][336]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.36.24:328][336]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.36.24:328][336]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.36.24:332][336]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.247 ms (total: 165.712 ms)
+[2024.11.08-15.36.24:353][336]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.36.24:353][336]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.24:362][336]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008900s)
+[2024.11.08-15.36.24:362][336]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.008934s)
+[2024.11.08-15.36.24:382][336]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2024.11.08-15.36.24:383][336]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.36.24:384][336]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.36.24:384][336]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.36.24:384][336]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.36.24:384][336]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.36.24:391][336]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.36.24:391][336]LogWorldPartition: Display: WorldPartition initialize took 7.289 ms (total: 670.056 ms)
+[2024.11.08-15.36.24:391][336]LogPlayLevel: PIE: World Init took: (0.008320s)
+[2024.11.08-15.36.24:686][336]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2024.11.08-15.36.24:686][336]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.36.24:686][336]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.36.24:686][336]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.36.24:687][336]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.36.24:687][336]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.36.24:687][336]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.36.24:687][336]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.36.24:687][336]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.36.24:687][336]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.36.24:687][336]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.36.24:687][336]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.36.24:688][336]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.36.24:720][336]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.36.24:721][336]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.36.24:721][336]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.36.24:721][336]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.36.24:721][336]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2024.11.08-15.36.24:721][336]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=21
+[2024.11.08-15.36.24:723][336]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2024.11.08-15.36.24:723][336]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2024.11.08-15.36.24:723][336]LogInit: FAudioDevice initialized with ID 21.
+[2024.11.08-15.36.24:723][336]LogAudio: Display: Audio Device (ID: 21) registered with world 'NewMap'.
+[2024.11.08-15.36.24:723][336]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 21
+[2024.11.08-15.36.24:725][336]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.36.24:727][336]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.36.24
+[2024.11.08-15.36.24:727][336]LogWorld: Bringing up level for play took: 0.001452
+[2024.11.08-15.36.24:729][336]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2024.11.08-15.36.24:731][336]LogStreaming: Display: FlushAsyncLoading(): 1 QueuedPackages, 0 AsyncPackages
+[2024.11.08-15.36.24:735][336]LogTemp: Display: Water!
+[2024.11.08-15.36.25:028][336]PIE: Server logged in
+[2024.11.08-15.36.25:029][336]PIE: Play in editor total start time 0.735 seconds.
+[2024.11.08-15.36.26:020][372]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.26:020][372]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.26:021][372]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.36.26:021][372]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.26:021][372]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.36.26:021][372]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.36.26:022][372]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.36.26:022][372]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.36.26:025][372]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.36.26:029][372]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.26:049][372]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.26:050][372]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 21
+[2024.11.08-15.36.26:050][372]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.11.08-15.36.26:051][372]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.11.08-15.36.26:059][372]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.11.08-15.36.26:582][373]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2024.11.08-15.36.29:242][627]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.36.29:328][627]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.36.29:328][627]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.36.29:332][627]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.067 ms (total: 169.780 ms)
+[2024.11.08-15.36.29:353][627]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.36.29:354][627]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.29:362][627]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008687s)
+[2024.11.08-15.36.29:363][627]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.008722s)
+[2024.11.08-15.36.29:382][627]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.11.08-15.36.29:383][627]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.36.29:384][627]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.36.29:384][627]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.36.29:384][627]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.36.29:384][627]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.36.29:391][627]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.36.29:391][627]LogWorldPartition: Display: WorldPartition initialize took 7.215 ms (total: 677.271 ms)
+[2024.11.08-15.36.29:391][627]LogPlayLevel: PIE: World Init took: (0.008238s)
+[2024.11.08-15.36.29:728][627]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.36.29:728][627]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.36.29:728][627]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.36.29:728][627]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.36.29:728][627]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.36.29:728][627]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.36.29:730][627]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.36.29:763][627]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.36.29:763][627]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.36.29:763][627]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.36.29:763][627]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.36.29:763][627]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2024.11.08-15.36.29:763][627]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2024.11.08-15.36.29:765][627]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2024.11.08-15.36.29:765][627]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2024.11.08-15.36.29:765][627]LogInit: FAudioDevice initialized with ID 22.
+[2024.11.08-15.36.29:765][627]LogAudio: Display: Audio Device (ID: 22) registered with world 'NewMap'.
+[2024.11.08-15.36.29:765][627]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.08-15.36.29:767][627]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.36.29:768][627]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.36.29
+[2024.11.08-15.36.29:768][627]LogWorld: Bringing up level for play took: 0.001438
+[2024.11.08-15.36.29:770][627]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2024.11.08-15.36.29:772][627]LogStreaming: Display: FlushAsyncLoading(): 1 QueuedPackages, 0 AsyncPackages
+[2024.11.08-15.36.29:778][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:778][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:778][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:778][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:779][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:779][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:779][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:779][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:780][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:780][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:780][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:780][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:780][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:781][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:781][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:781][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:781][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:781][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:782][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:782][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:782][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:782][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:785][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:785][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:785][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:786][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:786][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:786][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:786][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:800][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:806][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:806][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:806][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:806][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:810][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:818][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:818][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:818][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:819][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:823][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:823][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:830][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:831][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:832][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:832][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:834][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:834][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:836][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:837][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:839][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:839][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:842][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:849][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:863][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:878][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:879][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:879][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:879][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:880][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:880][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:880][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:881][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:881][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:882][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:883][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:883][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:884][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:884][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:886][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:894][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:894][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:895][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:898][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:898][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:903][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:905][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:907][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:907][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:908][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:908][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:909][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:911][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:920][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:930][627]LogTemp: Display: OVERLAP
+[2024.11.08-15.36.29:939][627]LogTemp: Display: Water!
+[2024.11.08-15.36.33:261][627]PIE: Server logged in
+[2024.11.08-15.36.33:262][627]PIE: Play in editor total start time 4.013 seconds.
+[2024.11.08-15.36.34:233][627]LogAutomationController: Ignoring very large delta of 5.00 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.08-15.36.48:411][844]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.48:411][844]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.36.48:417][844]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.36.48:528][844]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.48:531][844]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.36.48:531][844]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.36.48:536][844]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.36.48:536][844]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.36.48:539][844]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.36.48:555][844]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.36.48:631][844]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.36.48:631][844]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.08-15.36.48:631][844]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.08-15.36.48:633][844]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.08-15.36.48:834][844]LogUObjectHash: Compacting FUObjectHashTables data took   4.89ms
+[2024.11.08-15.36.49:381][845]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2024.11.08-15.36.52:961][163]Cmd: DELETE
+[2024.11.08-15.36.52:961][163]Cmd: ACTOR DELETE
+[2024.11.08-15.36.52:963][163]LogEditorActor: Deleted Actor: TriggerVolume
+[2024.11.08-15.36.52:985][163]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.11.08-15.36.52:991][163]LogEditorActor: Deleted 1 Actors (0.029 secs)
+[2024.11.08-15.36.53:820][250]Cmd: DELETE
+[2024.11.08-15.36.53:820][250]Cmd: ACTOR DELETE
+[2024.11.08-15.36.53:821][250]LogEditorActor: Deleted Actor: TriggerVolume
+[2024.11.08-15.36.53:843][250]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.11.08-15.36.53:845][250]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2024.11.08-15.37.08:273][673]Cmd: TRANSACTION UNDO
+[2024.11.08-15.37.08:273][673]LogEditorTransaction: Undo Clicking on Elements
+[2024.11.08-15.37.09:360][742]Cmd: TRANSACTION UNDO
+[2024.11.08-15.37.09:360][742]LogEditorTransaction: Undo Clicking on Elements
+[2024.11.08-15.37.09:862][790]Cmd: TRANSACTION UNDO
+[2024.11.08-15.37.09:862][790]LogEditorTransaction: Undo Move Elements
+[2024.11.08-15.38.00:742][612]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.38.01:073][612]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.38.01:073][612]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.38.01:077][612]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.206 ms (total: 173.986 ms)
+[2024.11.08-15.38.01:106][612]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.38.01:107][612]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.01:116][612]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009369s)
+[2024.11.08-15.38.01:116][612]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.009403s)
+[2024.11.08-15.38.01:136][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.11.08-15.38.01:139][612]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.38.01:140][612]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.38.01:140][612]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.38.01:140][612]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.38.01:140][612]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.38.01:147][612]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.38.01:148][612]LogWorldPartition: Display: WorldPartition initialize took 7.119 ms (total: 684.390 ms)
+[2024.11.08-15.38.01:148][612]LogPlayLevel: PIE: World Init took: (0.008155s)
+[2024.11.08-15.38.01:572][612]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.38.01:572][612]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.38.01:572][612]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.38.01:572][612]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.38.01:572][612]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.38.01:573][612]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.38.01:574][612]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.38.01:608][612]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.38.01:608][612]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.38.01:608][612]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.38.01:608][612]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.38.01:610][612]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=23
+[2024.11.08-15.38.01:610][612]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=23
+[2024.11.08-15.38.01:612][612]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=23
+[2024.11.08-15.38.01:612][612]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=23
+[2024.11.08-15.38.01:612][612]LogInit: FAudioDevice initialized with ID 23.
+[2024.11.08-15.38.01:612][612]LogAudio: Display: Audio Device (ID: 23) registered with world 'NewMap'.
+[2024.11.08-15.38.01:612][612]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 23
+[2024.11.08-15.38.01:615][612]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.38.01:616][612]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.38.01
+[2024.11.08-15.38.01:616][612]LogWorld: Bringing up level for play took: 0.001502
+[2024.11.08-15.38.01:618][612]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2024.11.08-15.38.01:623][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:623][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:623][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:623][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:624][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:624][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:624][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:624][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:624][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:624][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:624][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:625][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:625][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:625][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:625][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:625][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:625][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:626][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:626][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:626][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:626][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:626][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:626][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:626][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:627][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:627][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:627][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:627][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:628][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:628][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:628][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:628][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:628][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:629][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:630][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:630][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:631][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:632][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:632][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:633][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:633][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:634][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:634][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:634][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:635][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:636][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:636][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:637][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:639][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:639][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:640][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:640][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:640][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:640][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:641][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:642][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:642][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:643][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:643][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:643][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:643][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:644][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:644][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:644][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:644][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:644][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:645][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:646][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:646][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:646][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:647][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:647][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:647][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:647][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:647][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:648][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:648][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:648][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:648][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:648][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:649][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:650][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.01:650][612]LogTemp: Display: Water!
+[2024.11.08-15.38.01:651][612]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.03:203][612]PIE: Server logged in
+[2024.11.08-15.38.03:204][612]PIE: Play in editor total start time 2.456 seconds.
+[2024.11.08-15.38.03:651][612]LogAutomationController: Ignoring very large delta of 2.91 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.08-15.38.07:837][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.07:837][888]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.07:840][888]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.38.07:899][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.07:902][888]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.38.07:902][888]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.38.07:904][888]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.38.07:904][888]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.38.07:906][888]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.38.07:915][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.07:961][888]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.08-15.38.07:961][888]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 23
+[2024.11.08-15.38.07:961][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2024.11.08-15.38.07:963][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2024.11.08-15.38.07:967][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.08:041][888]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2024.11.08-15.38.08:570][889]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2024.11.08-15.38.09:715][964]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.38.09:774][964]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.38.09:774][964]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.38.09:779][964]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.811 ms (total: 178.798 ms)
+[2024.11.08-15.38.09:828][964]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.38.09:829][964]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.09:856][964]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027431s)
+[2024.11.08-15.38.09:856][964]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.027541s)
+[2024.11.08-15.38.09:879][964]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2024.11.08-15.38.09:883][964]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.38.09:884][964]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.38.09:884][964]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.38.09:884][964]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.38.09:884][964]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.38.09:891][964]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.38.09:891][964]LogWorldPartition: Display: WorldPartition initialize took 6.949 ms (total: 691.340 ms)
+[2024.11.08-15.38.09:891][964]LogPlayLevel: PIE: World Init took: (0.007920s)
+[2024.11.08-15.38.10:278][964]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.38.10:278][964]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.38.10:278][964]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.38.10:278][964]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.38.10:278][964]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.38.10:278][964]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.38.10:279][964]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.38.10:311][964]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.38.10:311][964]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.38.10:311][964]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.38.10:311][964]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.38.10:311][964]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=24
+[2024.11.08-15.38.10:311][964]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=24
+[2024.11.08-15.38.10:313][964]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=24
+[2024.11.08-15.38.10:313][964]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=24
+[2024.11.08-15.38.10:313][964]LogInit: FAudioDevice initialized with ID 24.
+[2024.11.08-15.38.10:313][964]LogAudio: Display: Audio Device (ID: 24) registered with world 'NewMap'.
+[2024.11.08-15.38.10:313][964]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 24
+[2024.11.08-15.38.10:316][964]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.38.10:317][964]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.38.10
+[2024.11.08-15.38.10:317][964]LogWorld: Bringing up level for play took: 0.001411
+[2024.11.08-15.38.10:320][964]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2024.11.08-15.38.10:324][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:324][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:324][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:324][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:325][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:325][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:325][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:326][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:326][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:326][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:326][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:327][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:327][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:327][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:327][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:327][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:327][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:328][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:328][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:328][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:328][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:328][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:329][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:330][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:330][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:330][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:330][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:330][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:330][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:330][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:331][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:331][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:332][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:332][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:332][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:332][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:332][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:332][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:332][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:334][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:335][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:335][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:335][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:335][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:335][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:335][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:336][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:336][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:336][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:336][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:336][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:336][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:337][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:337][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:337][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:338][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:338][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:338][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:338][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:338][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:339][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:339][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:339][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:340][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:340][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:340][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:340][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:341][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:341][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:342][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:342][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:342][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:343][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:344][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:344][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:344][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:344][964]LogTemp: Display: Water!
+[2024.11.08-15.38.10:344][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:345][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:345][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.10:346][964]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.11:554][964]PIE: Server logged in
+[2024.11.08-15.38.11:556][964]PIE: Play in editor total start time 1.834 seconds.
+[2024.11.08-15.38.11:949][964]LogAutomationController: Ignoring very large delta of 2.24 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.08-15.38.13:963][108]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.13:963][108]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.13:971][108]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.38.14:037][108]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.14:038][108]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.38.14:038][108]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.38.14:040][108]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.38.14:040][108]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.38.14:042][108]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.38.14:052][108]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.14:088][108]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.14:089][108]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 24
+[2024.11.08-15.38.14:089][108]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2024.11.08-15.38.14:090][108]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2024.11.08-15.38.14:168][108]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2024.11.08-15.38.14:588][109]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2024.11.08-15.38.15:439][205]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.08-15.38.15:498][205]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.08-15.38.15:498][205]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.08-15.38.15:502][205]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 4.113 ms (total: 182.912 ms)
+[2024.11.08-15.38.15:531][205]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.08-15.38.15:532][205]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.15:561][205]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029188s)
+[2024.11.08-15.38.15:561][205]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.029284s)
+[2024.11.08-15.38.15:582][205]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2024.11.08-15.38.15:585][205]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.08-15.38.15:586][205]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.08-15.38.15:586][205]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.08-15.38.15:586][205]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.08-15.38.15:586][205]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.08-15.38.15:593][205]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.08-15.38.15:593][205]LogWorldPartition: Display: WorldPartition initialize took 6.937 ms (total: 698.277 ms)
+[2024.11.08-15.38.15:593][205]LogPlayLevel: PIE: World Init took: (0.007996s)
+[2024.11.08-15.38.15:995][205]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2024.11.08-15.38.15:995][205]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.08-15.38.15:996][205]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.08-15.38.15:996][205]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.08-15.38.15:996][205]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.08-15.38.15:996][205]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.08-15.38.15:996][205]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.08-15.38.16:001][205]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.08-15.38.16:032][205]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.08-15.38.16:033][205]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.08-15.38.16:033][205]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.08-15.38.16:033][205]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.08-15.38.16:033][205]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=25
+[2024.11.08-15.38.16:033][205]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=25
+[2024.11.08-15.38.16:035][205]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=25
+[2024.11.08-15.38.16:035][205]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=25
+[2024.11.08-15.38.16:035][205]LogInit: FAudioDevice initialized with ID 25.
+[2024.11.08-15.38.16:035][205]LogAudio: Display: Audio Device (ID: 25) registered with world 'NewMap'.
+[2024.11.08-15.38.16:035][205]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 25
+[2024.11.08-15.38.16:038][205]LogLoad: Game class is 'GameModeBase'
+[2024.11.08-15.38.16:039][205]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.08-15.38.16
+[2024.11.08-15.38.16:039][205]LogWorld: Bringing up level for play took: 0.001519
+[2024.11.08-15.38.16:041][205]LogOnline: OSS: Created online subsystem instance for: :Context_28
+[2024.11.08-15.38.16:045][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:045][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:045][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:046][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:046][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:046][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:046][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:046][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:046][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:046][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:046][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:046][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:046][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:047][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:047][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:047][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:047][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:047][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:047][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:048][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:049][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:050][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:050][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:050][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:050][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:051][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:051][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:051][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:051][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:055][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:055][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:055][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:055][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:055][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:056][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:056][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:056][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:056][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:057][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:057][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:058][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:059][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:059][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:059][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:060][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:060][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:060][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:061][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:062][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:063][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:063][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:063][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:064][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:064][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:064][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:064][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:065][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:065][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:065][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:065][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:065][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:065][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:066][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:066][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:066][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:066][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:067][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:067][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:068][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:068][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:068][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:069][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:069][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:069][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:069][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:069][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:070][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:070][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:070][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:070][205]LogTemp: Display: Water!
+[2024.11.08-15.38.16:070][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:070][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:071][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:071][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:072][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.16:072][205]LogTemp: Display: OVERLAP
+[2024.11.08-15.38.17:537][205]PIE: Server logged in
+[2024.11.08-15.38.17:537][205]PIE: Play in editor total start time 2.093 seconds.
+[2024.11.08-15.38.17:969][205]LogAutomationController: Ignoring very large delta of 2.54 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.08-15.38.19:504][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.19:504][281]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.08-15.38.19:507][281]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.08-15.38.19:547][281]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.19:548][281]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.08-15.38.19:548][281]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.08-15.38.19:550][281]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.08-15.38.19:550][281]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.08-15.38.19:553][281]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.08-15.38.19:561][281]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.08-15.38.19:604][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.08-15.38.19:605][281]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 25
+[2024.11.08-15.38.19:605][281]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2024.11.08-15.38.19:607][281]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2024.11.08-15.38.19:680][281]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2024.11.08-15.38.20:212][282]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2024.11.08-15.38.21:982][423]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2024.11.08-15.38.21:990][423]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.08-15.38.22:090][423]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.11.08-15.38.22:110][423]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.11.08-15.38.22:130][423]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.11.08-15.38.22:134][423]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/3/LF/ASFNRSYJBJ9DB9153HOCRN
+[2024.11.08-15.38.22:135][423]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/ASFNRSYJBJ9DB9153HOCRN7D472BC94DCA46C904F3DA8DDA966280.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/3/LF/ASFNRSYJBJ9DB9153HOCRN.uasset'
+[2024.11.08-15.38.22:139][423]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/F/51/97SF53G977RMP7FDXL5JTT
+[2024.11.08-15.38.22:140][423]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/97SF53G977RMP7FDXL5JTT6865184A4AE29903DAB98A8902504A92.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/F/51/97SF53G977RMP7FDXL5JTT.uasset'
+[2024.11.08-15.38.22:144][423]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/0/T8/I54EBRXLY589PNYZ2U3J3K
+[2024.11.08-15.38.22:144][423]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/I54EBRXLY589PNYZ2U3J3KA053FC9944D839309745AB9AE76F4D5D.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/0/T8/I54EBRXLY589PNYZ2U3J3K.uasset'
+[2024.11.08-15.38.22:148][423]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/D/VU/W3X7VCSKKKXRVWJXUXJJ6G
+[2024.11.08-15.38.22:148][423]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/W3X7VCSKKKXRVWJXUXJJ6G8E3AF7264ED8C492E3DB1F9FE5164DDE.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/D/VU/W3X7VCSKKKXRVWJXUXJJ6G.uasset'
+[2024.11.08-15.38.22:192][423]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/5/WK/04K1P1GMM3ZP5DL4QMXBKF
+[2024.11.08-15.38.22:193][423]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/04K1P1GMM3ZP5DL4QMXBKF57A28A7E4C57389FE0A84A8E57ACA30F.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/5/WK/04K1P1GMM3ZP5DL4QMXBKF.uasset'
+[2024.11.08-15.38.22:257][423]LogFileHelpers: InternalPromptForCheckoutAndSave took 266.501 ms (total: 1.00 sec)
+[2024.11.08-15.38.22:332][423]LogContentValidation: Display: Starting to validate 5 assets
+[2024.11.08-15.38.22:332][423]LogContentValidation: Enabled validators:
+[2024.11.08-15.38.22:332][423]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.08-15.38.22:332][423]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.08-15.38.22:332][423]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.08-15.38.22:332][423]LogContentValidation: Display: Validating asset /Game/NewMap.NewMap
+[2024.11.08-15.38.22:332][423]AssetCheck: /Game/NewMap Validating asset
