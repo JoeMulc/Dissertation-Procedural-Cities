@@ -52,6 +52,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) float intensity = 0.1;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) TArray<AActor*> water;
+
 
 
 	UFUNCTION(BlueprintCallable) TArray<FRoad> GenerateRoads();

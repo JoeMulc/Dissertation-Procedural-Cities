@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\localworkdir\\2100609\\proceduralcity\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\waterboundingbox.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\localworkdir\\2100609\\proceduralcity\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\procedural_cityeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\localworkdir\\2100609\\proceduralcity\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\procedural_city\\definitions.procedural_city.h",
+            "d:\\localworkdir\\2100609\\proceduralcity\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\waterboundingbox.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "d:\\localworkdir\\2100609\\proceduralcity\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\unrealeditor\\inc\\procedural_city\\uht\\waterboundingbox.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

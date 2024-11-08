@@ -2,6 +2,7 @@
 
 
 #include "RoadGenerator.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ARoadGenerator::ARoadGenerator()
@@ -15,14 +16,14 @@ ARoadGenerator::ARoadGenerator()
 void ARoadGenerator::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	//UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Water", water);
 }
 
 // Called every frame
 void ARoadGenerator::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 TArray<FRoad> ARoadGenerator::GenerateRoads()
@@ -145,7 +146,7 @@ bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad*
 
 bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
 {
-	for (FRoad road : finalNetwork)
+	for (const FRoad road : finalNetwork)
 	{
 		FVector midPoint1 = (road.End - road.Start) / 2 + road.Start;
 		FVector midPoint2 = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
@@ -156,5 +157,10 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 			return false;
 		}
 	}
+	for (AActor* w : water)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Water!"));
+	}
+
 	return true;
 }
