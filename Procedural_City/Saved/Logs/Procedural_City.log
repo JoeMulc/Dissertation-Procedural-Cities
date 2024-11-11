@@ -17355,3 +17355,2636 @@ _MatTransl_3B7A55D3409170328211A060FC2E3BB1E263C720_BBD650804D314CE7A44ADF9BB4F3
 [2024.11.11-15.04.01:120][138]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
 [2024.11.11-15.04.01:120][138]LogContentValidation: Display: Validating asset /Game/NewMap.NewMap
 [2024.11.11-15.04.01:121][138]AssetCheck: /Game/NewMap Validating asset
+[2024.11.11-15.05.10:896][550]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.11-15.05.10:996][550]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.11-15.05.10:996][550]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.11-15.05.11:001][550]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 5.576 ms (total: 1.75 sec)
+[2024.11.11-15.05.11:012][550]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.11-15.05.11:012][550]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.11-15.05.11:022][550]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009413s)
+[2024.11.11-15.05.11:022][550]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.009451s)
+[2024.11.11-15.05.11:044][550]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2024.11.11-15.05.11:045][550]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.11-15.05.11:046][550]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.11-15.05.11:046][550]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.11-15.05.11:046][550]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.11-15.05.11:046][550]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.11-15.05.11:054][550]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.11-15.05.11:054][550]LogWorldPartition: Display: WorldPartition initialize took 7.529 ms (total: 1.79 sec)
+[2024.11.11-15.05.11:054][550]LogPlayLevel: PIE: World Init took: (0.008613s)
+[2024.11.11-15.05.11:204][550]LogAudio: Display: Creating Audio Device:                 Id: 171, Scope: Unique, Realtime: True
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.11-15.05.11:204][550]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.11-15.05.11:204][550]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.11-15.05.11:204][550]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.11-15.05.11:204][550]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.11-15.05.11:204][550]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.11-15.05.11:206][550]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.11-15.05.11:240][550]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.11-15.05.11:240][550]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.11-15.05.11:240][550]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.11-15.05.11:240][550]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.11-15.05.11:240][550]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=171
+[2024.11.11-15.05.11:240][550]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=171
+[2024.11.11-15.05.11:242][550]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=171
+[2024.11.11-15.05.11:242][550]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=171
+[2024.11.11-15.05.11:242][550]LogInit: FAudioDevice initialized with ID 171.
+[2024.11.11-15.05.11:242][550]LogAudio: Display: Audio Device (ID: 171) registered with world 'NewMap'.
+[2024.11.11-15.05.11:242][550]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 171
+[2024.11.11-15.05.11:245][550]LogLoad: Game class is 'GameModeBase'
+[2024.11.11-15.05.11:246][550]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.11-15.05.11
+[2024.11.11-15.05.11:247][550]LogWorld: Bringing up level for play took: 0.001499
+[2024.11.11-15.05.11:249][550]LogOnline: OSS: Created online subsystem instance for: :Context_179
+[2024.11.11-15.05.11:250][550]LogStreaming: Display: FlushAsyncLoading(): 15 QueuedPackages, 0 AsyncPackages
+[2024.11.11-15.05.11:288][550]LogTemp: Warning: Started!
+[2024.11.11-15.05.11:288][550]LogTemp: Display: Water - 9
+[2024.11.11-15.05.11:289][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:290][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:290][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:290][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:290][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:290][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:290][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:291][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:291][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:291][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:291][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:291][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:292][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:292][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:293][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:293][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:293][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:293][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:293][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:294][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:294][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:294][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:294][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:294][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:294][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:295][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:295][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:296][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:296][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:297][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:297][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:297][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:298][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:298][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:299][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:299][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:299][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:300][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:300][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:300][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:300][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:300][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:300][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:303][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:304][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:305][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:306][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:306][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:306][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:306][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:307][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:307][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:307][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:312][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:314][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:314][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:314][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:314][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:315][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:315][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:316][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:316][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:321][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:321][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:323][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:323][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:323][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:323][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:324][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:324][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:325][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:327][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:327][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:328][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:328][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:329][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:329][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:330][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:331][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:332][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:332][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:332][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:333][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:334][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:334][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:336][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:340][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:340][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:340][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:341][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:341][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:341][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:344][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:345][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:345][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:345][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:345][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:346][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:346][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:348][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:348][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:348][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:351][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:351][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:352][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:352][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:353][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:353][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:353][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:355][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:356][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:356][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:357][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:357][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:357][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:358][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:366][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:366][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:369][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:371][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:371][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:373][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:373][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:376][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:378][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:379][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:381][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:381][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:383][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:383][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:384][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:385][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:385][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:386][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:386][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:386][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:386][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:389][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:390][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:391][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:392][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:392][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:393][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:394][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:394][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:395][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:395][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:395][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:395][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:395][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:396][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:397][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:397][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:397][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:398][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:399][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:399][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:403][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:405][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:408][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:409][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:410][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:411][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:412][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:412][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:413][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:413][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:415][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:416][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:417][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:417][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:417][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:432][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:432][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:433][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:433][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:433][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:439][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:444][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:444][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:445][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:445][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:446][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:448][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:449][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:449][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:461][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:463][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:463][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:464][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:471][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:472][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:474][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:476][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:476][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:483][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:486][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:487][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:490][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:496][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:497][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:501][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:508][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:509][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:511][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:513][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:515][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:516][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:517][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:518][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:518][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:519][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:520][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:520][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:520][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:521][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:521][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:521][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:522][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:523][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:525][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:527][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:527][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:529][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:532][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:533][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:533][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:535][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:538][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:542][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:543][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:544][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:545][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:547][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:548][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:551][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:553][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:555][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:555][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:556][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:563][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:569][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:571][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:578][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:578][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:586][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:590][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:592][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:594][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:597][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:598][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:601][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:610][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:611][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:613][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:616][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:617][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:620][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:620][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:621][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:622][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:623][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:623][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:623][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:625][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:626][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:627][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:629][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:629][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:631][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:636][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:636][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:636][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:636][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:636][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:637][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:638][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:638][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:643][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:644][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:645][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:645][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:647][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:648][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:648][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:649][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:650][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:656][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:658][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:659][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:660][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:663][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:664][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:664][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:665][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:666][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:666][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:666][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:667][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:668][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:669][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:670][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:671][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:671][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:673][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:674][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:675][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:675][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:676][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:676][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:677][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:681][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:681][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:683][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:683][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:683][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:683][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:684][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:685][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:686][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:686][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:690][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:691][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:691][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:695][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:695][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:695][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:696][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:697][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:701][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:702][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:703][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:704][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:705][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:705][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:707][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:708][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:709][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:709][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:710][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:712][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:712][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:713][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:717][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:719][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:719][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:721][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:722][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:722][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:722][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:722][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:722][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:724][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:724][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:729][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:732][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:733][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:734][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:735][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:736][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:736][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:737][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:737][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:738][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:739][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:740][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:740][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:740][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:741][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:742][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:742][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:749][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:749][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:751][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:752][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:752][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:753][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:753][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:754][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:754][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:755][550]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.11:756][550]LogTemp: Display: Water!
+[2024.11.11-15.05.11:757][550]LogTemp: Warning: Finished!
+[2024.11.11-15.05.15:004][550]PIE: Server logged in
+[2024.11.11-15.05.15:005][550]PIE: Play in editor total start time 4.102 seconds.
+[2024.11.11-15.05.15:919][550]LogAutomationController: Ignoring very large delta of 5.35 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.05.18:014][645]LogEditorViewport: Clicking Background
+[2024.11.11-15.05.24:630][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.05.24:630][169]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.11-15.05.24:638][169]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.11-15.05.24:736][169]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.05.24:740][169]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.11-15.05.24:740][169]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.11-15.05.24:746][169]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.11-15.05.24:746][169]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.11-15.05.24:751][169]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.11-15.05.24:771][169]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.05.24:864][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.05.24:864][169]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 171
+[2024.11.11-15.05.24:864][169]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=171
+[2024.11.11-15.05.24:866][169]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=171
+[2024.11.11-15.05.25:036][169]LogUObjectHash: Compacting FUObjectHashTables data took   3.90ms
+[2024.11.11-15.05.25:510][170]LogPlayLevel: Display: Destroying online subsystem :Context_179
+[2024.11.11-15.05.34:046][ 83]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.11-15.05.34:129][ 83]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.11-15.05.34:130][ 83]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.11-15.05.34:143][ 83]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 14.040 ms (total: 1.77 sec)
+[2024.11.11-15.05.34:171][ 83]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.11-15.05.34:171][ 83]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.11-15.05.34:188][ 83]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016995s)
+[2024.11.11-15.05.34:188][ 83]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.017041s)
+[2024.11.11-15.05.34:210][ 83]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.11.11-15.05.34:216][ 83]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.11-15.05.34:217][ 83]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.11-15.05.34:217][ 83]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.11-15.05.34:217][ 83]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.11-15.05.34:217][ 83]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.11-15.05.34:224][ 83]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.11-15.05.34:224][ 83]LogWorldPartition: Display: WorldPartition initialize took 7.290 ms (total: 1.79 sec)
+[2024.11.11-15.05.34:224][ 83]LogPlayLevel: PIE: World Init took: (0.008290s)
+[2024.11.11-15.05.34:639][ 83]LogAudio: Display: Creating Audio Device:                 Id: 172, Scope: Unique, Realtime: True
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.11-15.05.34:639][ 83]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.11-15.05.34:639][ 83]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.11-15.05.34:639][ 83]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.11-15.05.34:639][ 83]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.11-15.05.34:639][ 83]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.11-15.05.34:644][ 83]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=172
+[2024.11.11-15.05.34:699][ 83]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=172
+[2024.11.11-15.05.34:702][ 83]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=172
+[2024.11.11-15.05.34:702][ 83]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=172
+[2024.11.11-15.05.34:702][ 83]LogInit: FAudioDevice initialized with ID 172.
+[2024.11.11-15.05.34:702][ 83]LogAudio: Display: Audio Device (ID: 172) registered with world 'NewMap'.
+[2024.11.11-15.05.34:702][ 83]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 172
+[2024.11.11-15.05.34:705][ 83]LogLoad: Game class is 'GameModeBase'
+[2024.11.11-15.05.34:705][ 83]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.11-15.05.34
+[2024.11.11-15.05.34:705][ 83]LogWorld: Bringing up level for play took: 0.001352
+[2024.11.11-15.05.34:707][ 83]LogOnline: OSS: Created online subsystem instance for: :Context_180
+[2024.11.11-15.05.34:712][ 83]LogStreaming: Display: FlushAsyncLoading(): 5 QueuedPackages, 0 AsyncPackages
+[2024.11.11-15.05.34:724][ 83]LogTemp: Warning: Started!
+[2024.11.11-15.05.34:724][ 83]LogTemp: Display: Water - 9
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:726][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:727][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:727][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:727][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:728][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:728][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:728][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:728][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:729][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:729][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:729][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:729][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:732][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:732][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:732][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:732][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:732][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:733][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:733][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:733][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:735][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:735][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:736][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:737][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:739][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:741][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:741][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:743][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:743][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:743][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:743][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:743][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:744][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:745][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:745][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:747][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:748][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:748][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:749][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:749][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:750][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:751][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:752][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:752][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:753][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:753][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:754][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:754][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:755][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:757][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:759][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:760][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:761][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:761][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:763][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:763][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:764][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:765][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:766][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:766][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:768][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:769][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:769][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:770][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:770][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:771][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:771][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:771][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:771][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:772][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:772][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:772][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:772][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:773][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:773][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:777][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:778][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:778][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:793][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:795][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:800][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:800][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:801][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:802][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:804][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:804][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:804][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:805][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:805][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:806][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:806][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:806][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:806][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:807][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:807][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:807][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:808][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:809][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:811][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:812][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:814][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:814][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:814][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:815][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:815][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:815][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:815][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:816][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:817][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:817][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:818][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:819][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:820][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:820][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:821][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:822][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:822][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:822][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:822][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:822][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:835][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:835][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:837][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:837][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:838][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:838][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:838][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:839][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:839][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:839][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:844][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:850][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:852][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:856][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:856][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:858][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:860][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:861][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:863][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:863][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:869][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:869][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:871][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:875][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:876][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:879][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:880][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.34:884][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:889][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:889][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:891][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:895][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:895][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:896][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:896][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:896][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:897][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:908][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:910][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:913][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:913][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:917][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:919][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:922][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:923][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:923][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:924][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:925][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:925][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:925][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:926][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:928][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:928][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:929][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:930][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:930][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:931][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:936][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:937][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:937][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:938][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:940][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:941][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:946][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:950][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:953][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:956][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:956][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:957][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:957][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:960][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:960][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:961][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:962][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:966][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:966][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:968][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:968][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:969][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:969][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:970][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:972][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:974][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:974][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:974][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:976][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:979][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:981][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:982][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:983][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:984][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:985][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:985][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:987][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:987][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:988][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:988][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:989][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:989][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:989][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:989][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:990][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:991][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:992][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:993][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:994][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:994][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:995][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:996][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:997][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:997][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:997][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:997][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.34:998][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:000][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:002][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:003][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:003][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:006][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:007][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:007][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:007][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:008][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:010][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:011][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:012][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:013][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:013][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:013][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:014][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:015][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:016][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:017][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:019][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:019][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:022][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:026][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:026][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:032][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:040][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:042][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:042][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:044][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:047][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:051][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:052][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:052][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:053][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:053][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:053][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:053][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:055][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:055][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:057][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:061][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:072][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:073][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:074][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:078][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:084][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:086][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:086][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:089][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:091][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:103][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:105][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:115][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:116][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:118][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:123][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:123][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:123][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:124][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:125][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:126][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:127][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:127][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:129][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:129][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:131][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:132][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:133][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:136][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:136][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:136][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:137][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:137][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:138][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:139][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:140][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:143][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:145][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:150][ 83]LogTemp: Display: Water!
+[2024.11.11-15.05.35:154][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:155][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:155][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:156][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:157][ 83]LogTemp: Display: OVERLAP
+[2024.11.11-15.05.35:159][ 83]LogTemp: Warning: Finished!
+[2024.11.11-15.05.38:571][ 83]PIE: Server logged in
+[2024.11.11-15.05.38:572][ 83]PIE: Play in editor total start time 4.519 seconds.
+[2024.11.11-15.05.39:807][ 83]LogAutomationController: Ignoring very large delta of 5.76 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.05.53:305][923]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.05.53:305][923]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.11-15.05.53:313][923]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.11-15.05.53:408][923]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.05.53:412][923]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.11-15.05.53:412][923]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.11-15.05.53:417][923]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.11-15.05.53:417][923]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.11-15.05.53:422][923]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.11-15.05.53:440][923]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.05.53:525][923]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.05.53:526][923]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 172
+[2024.11.11-15.05.53:526][923]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=172
+[2024.11.11-15.05.53:528][923]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=172
+[2024.11.11-15.05.53:690][923]LogUObjectHash: Compacting FUObjectHashTables data took   3.92ms
+[2024.11.11-15.05.54:187][924]LogPlayLevel: Display: Destroying online subsystem :Context_180
+[2024.11.11-15.05.59:930][521]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.11-15.06.00:029][521]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.11-15.06.00:029][521]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.11-15.06.00:044][521]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 14.944 ms (total: 1.78 sec)
+[2024.11.11-15.06.00:071][521]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.11-15.06.00:072][521]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.11-15.06.00:096][521]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023764s)
+[2024.11.11-15.06.00:096][521]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.023822s)
+[2024.11.11-15.06.00:120][521]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2024.11.11-15.06.00:126][521]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.11-15.06.00:127][521]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.11-15.06.00:127][521]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.11-15.06.00:128][521]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.11-15.06.00:128][521]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.11-15.06.00:139][521]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.11-15.06.00:139][521]LogWorldPartition: Display: WorldPartition initialize took 11.050 ms (total: 1.80 sec)
+[2024.11.11-15.06.00:139][521]LogPlayLevel: PIE: World Init took: (0.012271s)
+[2024.11.11-15.06.00:555][521]LogAudio: Display: Creating Audio Device:                 Id: 173, Scope: Unique, Realtime: True
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.11-15.06.00:555][521]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.11-15.06.00:556][521]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.11-15.06.00:556][521]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.11-15.06.00:556][521]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.11-15.06.00:556][521]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.11-15.06.00:560][521]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.11-15.06.00:596][521]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.11-15.06.00:596][521]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.11-15.06.00:596][521]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.11-15.06.00:596][521]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.11-15.06.00:596][521]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=173
+[2024.11.11-15.06.00:596][521]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=173
+[2024.11.11-15.06.00:598][521]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=173
+[2024.11.11-15.06.00:598][521]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=173
+[2024.11.11-15.06.00:598][521]LogInit: FAudioDevice initialized with ID 173.
+[2024.11.11-15.06.00:598][521]LogAudio: Display: Audio Device (ID: 173) registered with world 'NewMap'.
+[2024.11.11-15.06.00:598][521]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 173
+[2024.11.11-15.06.00:600][521]LogLoad: Game class is 'GameModeBase'
+[2024.11.11-15.06.00:602][521]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.11-15.06.00
+[2024.11.11-15.06.00:602][521]LogWorld: Bringing up level for play took: 0.001311
+[2024.11.11-15.06.00:604][521]LogOnline: OSS: Created online subsystem instance for: :Context_181
+[2024.11.11-15.06.00:608][521]LogStreaming: Display: FlushAsyncLoading(): 5 QueuedPackages, 0 AsyncPackages
+[2024.11.11-15.06.00:620][521]LogTemp: Warning: Started!
+[2024.11.11-15.06.00:620][521]LogTemp: Display: Water - 9
+[2024.11.11-15.06.00:621][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:621][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:623][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:623][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:624][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:624][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:624][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:624][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:624][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:626][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:626][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:626][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:627][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:627][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:627][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:627][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:627][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:628][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:628][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:629][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:629][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:629][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:629][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:629][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:630][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:631][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:631][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:632][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:632][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:632][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:633][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:633][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:633][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:633][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:634][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:634][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:634][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:634][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:634][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:634][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:634][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:635][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:636][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:636][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:636][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:636][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:636][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:637][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:637][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:637][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:637][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:638][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:638][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:638][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:639][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:639][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:639][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:639][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:639][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:639][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:639][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:641][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:641][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:645][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:653][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:654][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:657][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:659][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:660][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:660][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:660][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:660][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:661][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:663][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:663][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:663][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:668][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:669][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:669][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:670][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:671][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:673][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:675][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:680][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:682][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:685][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:694][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:698][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:700][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:700][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:701][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:705][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:705][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:706][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:707][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:707][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:707][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:709][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:709][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:710][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:711][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:712][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:712][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:712][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:713][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:713][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:714][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:715][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:715][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:716][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:719][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:720][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:721][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:722][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:724][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:725][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:728][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:733][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:735][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:736][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:739][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:740][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:741][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:741][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:745][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:746][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:747][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:748][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:748][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:749][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:752][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:752][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:757][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:757][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:757][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:759][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:760][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:761][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:761][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:762][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:762][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:765][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:769][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:775][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:775][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:777][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:778][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:778][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:778][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:778][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:778][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:779][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:779][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:781][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:782][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:785][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:785][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:786][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:786][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:786][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:789][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:792][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:792][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:794][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:794][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:795][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:797][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:798][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:798][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:799][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:800][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:800][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:801][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:801][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:803][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:804][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:805][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:806][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:807][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:807][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:809][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:809][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:809][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:809][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:811][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:812][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:812][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:813][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:813][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:814][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:814][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:814][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:815][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:817][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:819][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:820][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:822][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:823][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:824][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:825][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:825][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:826][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:827][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:828][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:828][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:828][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:829][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:829][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:830][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:831][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:831][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:831][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:832][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:834][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:834][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:834][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:835][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:835][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:836][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:836][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:836][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:837][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:838][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:838][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:838][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:838][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:840][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:840][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:841][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:841][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:843][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:846][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:851][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:852][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:853][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:853][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:861][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:866][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:867][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:868][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:870][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:873][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:877][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:887][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:887][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:903][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:907][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:912][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:913][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:919][521]LogTemp: Display: Water!
+[2024.11.11-15.06.00:924][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:925][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:925][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:930][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:932][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:933][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:933][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:935][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:938][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:938][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:939][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:940][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:940][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:941][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:942][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:942][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:947][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:948][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:951][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:952][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:954][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:956][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:956][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:962][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:962][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:963][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:963][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:963][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:965][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:966][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:966][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:968][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:968][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:969][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:969][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:970][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:970][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:971][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:972][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:976][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:977][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:980][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:983][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:985][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:987][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:988][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:989][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:990][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:993][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:993][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:995][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:996][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:996][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:998][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.00:999][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:000][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:000][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:001][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:002][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:002][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:003][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:003][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:005][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:007][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:007][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:010][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:010][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:011][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:013][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:014][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:014][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:015][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:017][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:018][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:020][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:021][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:024][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:025][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:026][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:030][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:041][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:041][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:042][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:045][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:046][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:047][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:049][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:050][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:052][521]LogTemp: Display: Water!
+[2024.11.11-15.06.01:061][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:061][521]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.01:062][521]LogTemp: Warning: Finished!
+[2024.11.11-15.06.04:396][521]PIE: Server logged in
+[2024.11.11-15.06.04:398][521]PIE: Play in editor total start time 4.462 seconds.
+[2024.11.11-15.06.05:638][521]LogAutomationController: Ignoring very large delta of 5.71 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.06.12:163][969]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.06.12:163][969]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.11-15.06.12:170][969]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.11-15.06.12:269][969]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.06.12:273][969]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.11-15.06.12:273][969]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.11-15.06.12:278][969]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.11-15.06.12:278][969]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.11-15.06.12:283][969]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.11-15.06.12:302][969]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.06.12:386][969]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.06.12:387][969]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 173
+[2024.11.11-15.06.12:387][969]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=173
+[2024.11.11-15.06.12:388][969]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=173
+[2024.11.11-15.06.12:555][969]LogUObjectHash: Compacting FUObjectHashTables data took   4.49ms
+[2024.11.11-15.06.12:922][970]LogPlayLevel: Display: Destroying online subsystem :Context_181
+[2024.11.11-15.06.18:751][588]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.11-15.06.18:830][588]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.11-15.06.18:830][588]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.11-15.06.18:848][588]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 17.804 ms (total: 1.80 sec)
+[2024.11.11-15.06.18:863][588]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.11-15.06.18:863][588]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.11-15.06.18:884][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021048s)
+[2024.11.11-15.06.18:885][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.021105s)
+[2024.11.11-15.06.18:908][588]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.11.11-15.06.18:914][588]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.11-15.06.18:915][588]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.11-15.06.18:915][588]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.11-15.06.18:915][588]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.11-15.06.18:915][588]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.11-15.06.18:922][588]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.11-15.06.18:922][588]LogWorldPartition: Display: WorldPartition initialize took 7.494 ms (total: 1.81 sec)
+[2024.11.11-15.06.18:923][588]LogPlayLevel: PIE: World Init took: (0.008523s)
+[2024.11.11-15.06.19:280][588]LogAudio: Display: Creating Audio Device:                 Id: 174, Scope: Unique, Realtime: True
+[2024.11.11-15.06.19:280][588]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.11-15.06.19:280][588]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.11-15.06.19:280][588]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.11-15.06.19:280][588]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.11-15.06.19:280][588]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.11-15.06.19:281][588]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.11-15.06.19:281][588]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.11-15.06.19:281][588]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.11-15.06.19:281][588]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.11-15.06.19:281][588]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.11-15.06.19:281][588]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.11-15.06.19:286][588]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.11-15.06.19:320][588]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.11-15.06.19:321][588]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.11-15.06.19:321][588]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.11-15.06.19:321][588]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.11-15.06.19:321][588]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=174
+[2024.11.11-15.06.19:321][588]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=174
+[2024.11.11-15.06.19:323][588]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=174
+[2024.11.11-15.06.19:323][588]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=174
+[2024.11.11-15.06.19:323][588]LogInit: FAudioDevice initialized with ID 174.
+[2024.11.11-15.06.19:323][588]LogAudio: Display: Audio Device (ID: 174) registered with world 'NewMap'.
+[2024.11.11-15.06.19:323][588]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 174
+[2024.11.11-15.06.19:325][588]LogLoad: Game class is 'GameModeBase'
+[2024.11.11-15.06.19:328][588]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.11-15.06.19
+[2024.11.11-15.06.19:328][588]LogWorld: Bringing up level for play took: 0.002629
+[2024.11.11-15.06.19:330][588]LogOnline: OSS: Created online subsystem instance for: :Context_182
+[2024.11.11-15.06.19:335][588]LogStreaming: Display: FlushAsyncLoading(): 5 QueuedPackages, 0 AsyncPackages
+[2024.11.11-15.06.19:347][588]LogTemp: Warning: Started!
+[2024.11.11-15.06.19:347][588]LogTemp: Display: Water - 9
+[2024.11.11-15.06.19:347][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:348][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:349][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:349][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:349][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:349][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:350][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:350][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:350][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:350][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:350][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:350][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:351][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:351][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:351][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:351][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:352][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:352][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:352][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:352][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:352][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:355][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:357][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:357][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:357][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:359][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:361][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:361][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:361][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:361][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:361][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:362][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:362][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:362][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:362][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:363][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:363][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:364][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:364][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:364][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:365][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:366][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:366][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:366][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:366][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:366][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:367][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:368][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:368][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:368][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:369][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:370][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:371][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:372][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:377][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:377][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:377][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:377][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:379][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:383][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:384][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:384][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:384][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:385][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:385][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:385][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:385][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:386][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:387][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:388][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:388][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:388][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:389][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:390][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:391][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:392][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:392][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:393][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:396][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:397][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:397][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:397][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:400][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:400][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:401][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:401][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:401][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:403][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:403][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:404][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:405][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:406][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:407][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:408][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:408][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:412][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:414][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:415][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:416][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:416][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:416][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:416][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:418][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:418][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:419][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:420][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:420][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:423][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:424][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:430][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:430][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:432][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:434][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:439][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:439][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:439][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:439][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:440][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:441][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:442][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:445][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:450][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:451][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:452][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:453][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:460][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:463][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:463][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:464][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:464][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:466][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:467][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:468][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:469][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:470][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:470][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:471][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:474][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:476][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:476][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:476][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:477][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:477][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:477][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:481][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:482][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:483][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:484][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:484][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:487][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:489][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:491][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:492][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:494][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:494][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:494][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:495][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:496][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:496][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:497][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:497][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:498][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:498][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:501][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:502][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:503][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:504][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:505][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:505][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:506][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:508][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:508][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:508][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:508][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:509][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:509][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:509][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:511][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:511][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:512][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:512][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:513][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:513][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:513][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:513][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:515][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:519][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:520][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:520][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:521][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:523][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:523][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:524][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:524][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:524][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:524][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:525][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:526][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:527][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:528][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:529][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:530][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:534][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:535][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:535][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:536][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:537][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:537][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:537][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:538][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:538][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:538][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:540][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:540][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:541][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:541][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:541][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:541][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:541][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:542][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:543][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:543][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:546][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:547][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:547][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:548][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:549][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:550][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:550][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:551][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:551][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:552][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:552][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:553][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:554][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:554][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:554][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:557][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:557][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:560][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:561][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:566][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:567][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:570][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:570][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:572][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:572][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:573][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:573][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:574][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:574][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:575][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:576][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:577][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:577][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:578][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:578][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:578][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:579][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:580][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:583][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:584][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:584][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:584][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:584][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:585][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:585][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:585][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:585][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:585][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:586][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:586][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:588][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:588][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:588][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:588][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:592][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:593][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:593][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:593][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:594][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:594][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:595][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:595][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:595][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:596][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:597][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:597][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:598][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:598][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:598][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:605][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:605][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:606][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:607][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:609][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:609][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:611][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:612][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:612][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:612][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:612][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:615][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:616][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:616][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:617][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:617][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:618][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:618][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:619][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:620][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:621][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:621][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:621][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:623][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:625][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:625][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:626][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:627][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:628][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:628][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:629][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:629][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:629][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:629][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:629][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:630][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:630][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:630][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:630][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:631][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:631][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:631][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:633][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:633][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:633][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:634][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:635][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:635][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:636][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:639][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:639][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:639][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:642][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:642][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:642][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:642][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:644][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:644][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:644][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:644][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:645][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:645][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:647][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:647][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:653][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:653][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:658][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:662][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:664][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:665][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:666][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:666][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:667][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:667][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:667][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:668][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:668][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:670][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:670][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:670][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:673][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:677][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:678][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:682][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:684][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:686][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:687][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:692][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:693][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:697][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:698][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:698][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:699][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:699][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:699][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:700][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:701][588]LogTemp: Display: Water!
+[2024.11.11-15.06.19:703][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:704][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:704][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:704][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:705][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:706][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:707][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:708][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:710][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:711][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:714][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:723][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:723][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:723][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:724][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:725][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:727][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:727][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:728][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:729][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:731][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:732][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:732][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:735][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:735][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:743][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:743][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:744][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:746][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:746][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:748][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:749][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:749][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:753][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:754][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:755][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:755][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:756][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:757][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:761][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:762][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:763][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:763][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:764][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:764][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:765][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:765][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:766][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:767][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:767][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:767][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:768][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:769][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:770][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:770][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:770][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:771][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:771][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:772][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:773][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:773][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:774][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:775][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:775][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:779][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:780][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:780][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:783][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:784][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:784][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:784][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:784][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:785][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:786][588]LogTemp: Display: OVERLAP
+[2024.11.11-15.06.19:787][588]LogTemp: Warning: Finished!
+[2024.11.11-15.06.23:172][588]PIE: Server logged in
+[2024.11.11-15.06.23:174][588]PIE: Play in editor total start time 4.416 seconds.
+[2024.11.11-15.06.24:449][588]LogAutomationController: Ignoring very large delta of 5.70 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.06.47:031][889]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.06.47:031][889]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.11-15.06.47:041][889]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.11-15.06.47:139][889]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.06.47:143][889]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.11-15.06.47:143][889]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.11-15.06.47:148][889]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.11-15.06.47:148][889]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.11-15.06.47:152][889]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.11-15.06.47:172][889]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.06.47:258][889]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.06.47:258][889]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 174
+[2024.11.11-15.06.47:258][889]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=174
+[2024.11.11-15.06.47:259][889]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=174
+[2024.11.11-15.06.47:422][889]LogUObjectHash: Compacting FUObjectHashTables data took   3.29ms
+[2024.11.11-15.06.47:930][890]LogPlayLevel: Display: Destroying online subsystem :Context_182
+[2024.11.11-15.07.02:663][531]Cmd: EDIT COPY
+[2024.11.11-15.07.02:884][555]LogWindows: Warning: OpenClipboard failed with error code 5
+[2024.11.11-15.07.02:885][555]Cmd: EDIT PASTE
+[2024.11.11-15.07.07:050][ 23]Cmd: TRANSACTION UNDO
+[2024.11.11-15.07.07:050][ 23]LogEditorTransaction: Undo Move Elements
+[2024.11.11-15.07.07:910][ 65]LogEditorViewport: Clicking Background
+[2024.11.11-15.07.49:666][664]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2024.11.11-15.07.49:676][664]LogContentBrowser: Creating deferred item: NewMaterial
+[2024.11.11-15.07.49:691][665]LogContentBrowser: Renaming the item being created (Deferred Item: NewMaterial).
+[2024.11.11-15.07.54:350][196]LogContentBrowser: Attempting asset rename: NewMaterial -> Green
+[2024.11.11-15.07.54:351][196]LogContentBrowser: End creating deferred item NewMaterial
+[2024.11.11-15.07.56:745][443]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Green.Green
+[2024.11.11-15.07.57:135][443]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.11-15.07.57:135][443]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.07.57:135][443]MaterialEditorStats: Shader Count: 0
+[2024.11.11-15.07.57:135][443]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Base pass shader: 201 instructions
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Texture samplers: 2/16
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Shader Count: 4
+[2024.11.11-15.07.57:230][445]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.08.01:744][634]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.08.01:761][634]LogAutomationController: Ignoring very large delta of 2.74 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.03:578][755]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.08.03:777][755]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.11.11-15.08.05:501][755]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2024.11.11-15.08.05:568][755]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.08.05:622][755]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.08.05:701][755]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.08.05:702][755]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.08.05:702][755]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.08.05:704][755]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.08.05:704][755]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/GreenE89AE90E4CCD3DC7EF4546BB29C946D6.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.08.05:737][755]LogFileHelpers: InternalPromptForCheckoutAndSave took 168.231 ms (total: 6.87 sec)
+[2024.11.11-15.08.05:789][755]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.08.05:789][755]LogContentValidation: Enabled validators:
+[2024.11.11-15.08.05:789][755]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.08.05:789][755]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.08.05:789][755]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.08.05:789][755]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.08.05:789][755]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: MaxSampler: 251 instructions
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Texture samplers: 3/16
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Shader Count: 16
+[2024.11.11-15.08.05:817][755]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.08.05:823][755]LogAutomationController: Ignoring very large delta of 2.25 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.14:294][589]LogEditorViewport: Clicking Background
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: ================================================
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Total job queries 274, among them cache hits 79 (28.83%), DDC hits 151 (55.11%), Duplicates 9 (3.28%)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Tracking 186 distinct input hashes that result in 174 distinct outputs (93.55%)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: RAM used: 5.83 MiB of 1.60 GiB budget. Usage: 0.36%
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Shaders Compiled: 35
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Jobs assigned 35, completed 35 (100%)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Average time worker was idle: 2468.79 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Time job spent in pending queue: average 0.08 s, longest 0.15 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Job execution time: average 1.20 s, max 1.97 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Job life time (pending + execution): average 1.28 s, max 2.07
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Shader code size: average 37.851 KiB, min 27.641 KiB, max 54.195 KiB
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 10.78 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.01%
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Jobs were issued in 35 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Average processing rate: 3.25 jobs/sec
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Total thread time: 19.521 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Total thread preprocess time: 3.928 s
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Percentage time preprocessing: 20.12%
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Effective parallelization: 1.81 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled    2 times, average 1.02 sec, max 1.11 sec, min 0.93 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight (compiled    2 times, average 0.63 sec, max 0.64 sec, min 0.62 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:        TBasePassPSFCachedPointIndirectLightingPolicySkylight (compiled    2 times, average 0.61 sec, max 0.63 sec, min 0.58 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: TBasePassPSFPrecomputedVolumetricLightmapLightingPolicySkylight (compiled    2 times, average 0.59 sec, max 0.61 sec, min 0.58 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:                TBasePassPSFCachedPointIndirectLightingPolicy (compiled    2 times, average 0.59 sec, max 0.60 sec, min 0.58 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 14.11% of total time (compiled    5 times, average 0.55 sec, max 0.73 sec, min 0.44 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:                                             FDebugViewModePS - 10.47% of total time (compiled    2 times, average 1.02 sec, max 1.11 sec, min 0.93 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 8.19% of total time (compiled    4 times, average 0.40 sec, max 0.53 sec, min 0.30 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight - 6.43% of total time (compiled    2 times, average 0.63 sec, max 0.64 sec, min 0.62 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display:        TBasePassPSFCachedPointIndirectLightingPolicySkylight - 6.21% of total time (compiled    2 times, average 0.61 sec, max 0.63 sec, min 0.58 sec)
+[2024.11.11-15.08.16:576][802]LogShaderCompilers: Display: === Material stats ===
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Materials Cooked:        0
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Materials Translated:    137
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Material Total Translate Time: 0.22 s
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Material Translation Only: 0.04 s (16%)
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (1%)
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: Material Cache Hits: 17 (12%)
+[2024.11.11-15.08.16:577][802]LogShaderCompilers: Display: ================================================
+[2024.11.11-15.08.24:422][556]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.08.24:424][556]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.08.24:472][556]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.08.24:472][556]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.08.24:472][556]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.08.24:474][556]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.08.24:475][556]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/GreenF92F650C47AA86890D20EF92C1EDB542.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.08.24:531][556]LogFileHelpers: InternalPromptForCheckoutAndSave took 106.542 ms (total: 6.98 sec)
+[2024.11.11-15.08.24:588][556]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.08.24:588][556]LogContentValidation: Enabled validators:
+[2024.11.11-15.08.24:588][556]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.08.24:588][556]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.08.24:588][556]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.08.24:588][556]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.08.24:588][556]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.08.33:789][190]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.08.33:805][190]LogAutomationController: Ignoring very large delta of 2.41 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.35:299][293]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.08.35:480][293]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2024.11.11-15.08.37:037][293]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2024.11.11-15.08.37:127][293]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.08.37:190][293]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.08.37:240][293]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.08.37:240][293]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.08.37:240][293]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.08.37:242][293]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.08.37:243][293]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/Green420589C24EC44463BA8BDCA3AB5A40F5.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.08.37:265][293]LogFileHelpers: InternalPromptForCheckoutAndSave took 137.850 ms (total: 7.11 sec)
+[2024.11.11-15.08.37:323][293]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.08.37:323][293]LogContentValidation: Enabled validators:
+[2024.11.11-15.08.37:323][293]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.08.37:323][293]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.08.37:323][293]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.08.37:323][293]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.08.37:323][293]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.08.37:345][293]MaterialEditorStats: Base pass shader: 204 instructions
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: MaxSampler: 251 instructions
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: Texture samplers: 3/16
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: Shader Count: 16
+[2024.11.11-15.08.37:346][293]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.08.37:365][293]LogAutomationController: Ignoring very large delta of 2.07 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.43:075][646]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.08.43:092][646]LogAutomationController: Ignoring very large delta of 2.01 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.43:939][681]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.08.44:127][681]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2024.11.11-15.08.45:429][681]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2024.11.11-15.08.45:468][681]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.08.45:523][681]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.08.45:619][681]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.08.45:619][681]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.08.45:619][681]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.08.45:621][681]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.08.45:622][681]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/Green9A7813A94829161819E565BBB27A3EEB.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.08.45:641][681]LogFileHelpers: InternalPromptForCheckoutAndSave took 172.277 ms (total: 7.29 sec)
+[2024.11.11-15.08.45:690][681]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.08.45:690][681]LogContentValidation: Enabled validators:
+[2024.11.11-15.08.45:690][681]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.08.45:690][681]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.08.45:690][681]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.08.45:690][681]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.08.45:690][681]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: MaxSampler: 251 instructions
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Texture samplers: 3/16
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Shader Count: 16
+[2024.11.11-15.08.45:712][681]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.08.53:932][ 74]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.08.53:948][ 74]LogAutomationController: Ignoring very large delta of 3.51 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.08.55:697][236]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.11.11-15.08.55:697][236]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.08.55:697][236]MaterialEditorStats: Texture samplers: 2/16
+[2024.11.11-15.08.55:698][236]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.08.55:698][236]MaterialEditorStats: Shader Count: 4
+[2024.11.11-15.08.55:698][236]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.08.57:712][432]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.08.57:884][432]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2024.11.11-15.08.59:093][432]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2024.11.11-15.08.59:152][432]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.08.59:215][432]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.08.59:278][432]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.08.59:278][432]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.08.59:278][432]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.08.59:280][432]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.08.59:281][432]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/Green8123ACB34AFB580B7EFF598AD67C9211.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.08.59:299][432]LogFileHelpers: InternalPromptForCheckoutAndSave took 147.028 ms (total: 7.43 sec)
+[2024.11.11-15.08.59:358][432]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.08.59:358][432]LogContentValidation: Enabled validators:
+[2024.11.11-15.08.59:358][432]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.08.59:358][432]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.08.59:358][432]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.08.59:358][432]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.08.59:358][432]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: MaxSampler: 251 instructions
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Texture samplers: 3/16
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Shader Count: 16
+[2024.11.11-15.08.59:442][432]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.09.07:129][837]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.09.07:149][837]LogAutomationController: Ignoring very large delta of 3.19 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.09.09:541][ 62]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.09.09:722][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2024.11.11-15.09.10:922][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2024.11.11-15.09.10:977][ 62]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.09.11:006][ 62]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.09.11:058][ 62]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.09.11:058][ 62]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.09.11:058][ 62]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.09.11:060][ 62]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.09.11:061][ 62]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/Green612116A2449ED83D55E0C39681EDC26E.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.09.11:083][ 62]LogFileHelpers: InternalPromptForCheckoutAndSave took 105.722 ms (total: 7.54 sec)
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: Enabled validators:
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.09.11:159][ 62]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.09.11:159][ 62]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Base pass vertex shader: 129 instructions
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: MaxSampler: 250 instructions
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Texture samplers: 3/16
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Shader Count: 16
+[2024.11.11-15.09.11:188][ 62]MaterialEditorStats: Preshaders: 2  (2 param fetches, 4 ops)
+[2024.11.11-15.09.19:251][715]LogSlate: Window 'Material Baking Options' being destroyed
+[2024.11.11-15.09.27:393][474]Cmd: DELETE
+[2024.11.11-15.09.27:393][474]Cmd: ACTOR DELETE
+[2024.11.11-15.09.27:393][474]LogEditorActor: Cannot delete component StaticMeshComponent /Game/NewMap.NewMap:PersistentLevel.StaticMeshActor_UAID_C8D9D21A1B086E2E02_1919416464.StaticMeshComponent0: Can't delete non-instanced components or the scene root.
+[2024.11.11-15.09.35:353][ 41]LogSlate: Window 'Color Picker' being destroyed
+[2024.11.11-15.09.35:371][ 41]LogAutomationController: Ignoring very large delta of 2.17 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.09.37:090][178]LogMaterialEditor: Saving and Compiling material Green
+[2024.11.11-15.09.37:267][178]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2024.11.11-15.09.38:882][178]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2024.11.11-15.09.38:944][178]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.09.38:989][178]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Green] ([1] browsable assets)...
+[2024.11.11-15.09.39:040][178]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Green.Green]
+[2024.11.11-15.09.39:040][178]OBJ SavePackage: Finished generating thumbnails for package [/Game/Green]
+[2024.11.11-15.09.39:040][178]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Green" FILE="D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset" SILENT=true
+[2024.11.11-15.09.39:042][178]LogSavePackage: Moving output files for package: /Game/Green
+[2024.11.11-15.09.39:043][178]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/Green0B7FF5D747632D2BC10B7AA01BB23EF8.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/Green.uasset'
+[2024.11.11-15.09.39:066][178]LogFileHelpers: InternalPromptForCheckoutAndSave took 121.892 ms (total: 7.66 sec)
+[2024.11.11-15.09.39:123][178]LogContentValidation: Display: Starting to validate 1 assets
+[2024.11.11-15.09.39:123][178]LogContentValidation: Enabled validators:
+[2024.11.11-15.09.39:123][178]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.09.39:123][178]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.09.39:123][178]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.09.39:123][178]LogContentValidation: Display: Validating asset /Game/Green.Green
+[2024.11.11-15.09.39:123][178]AssetCheck: /Game/Green Validating asset
+[2024.11.11-15.09.39:166][178]LogAutomationController: Ignoring very large delta of 2.08 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.09.45:015][724]Cmd: EDIT COPY
+[2024.11.11-15.09.45:260][753]Cmd: EDIT PASTE
+[2024.11.11-15.10.46:056][756]LogSceneOutliner: Outliner Column Item Label does not have a localizable name, please specify one to FSceneOutlinerColumnInfo
+[2024.11.11-15.10.46:056][756]LogSceneOutliner: Outliner Column Type does not have a localizable name, please specify one to FSceneOutlinerColumnInfo
+[2024.11.11-15.10.52:015][418]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-15.10.52:084][418]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2024.11.11-15.10.52:107][418]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2024.11.11-15.10.52:130][418]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2024.11.11-15.10.52:133][418]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/1/MM/FOS0YEU0KW0YZRYQ0EDIMD
+[2024.11.11-15.10.52:134][418]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/FOS0YEU0KW0YZRYQ0EDIMD173BE078413B44EB03E4CDB90F1DD806.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/1/MM/FOS0YEU0KW0YZRYQ0EDIMD.uasset'
+[2024.11.11-15.10.52:138][418]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/3/LF/ASFNRSYJBJ9DB9153HOCRN
+[2024.11.11-15.10.52:140][418]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/ASFNRSYJBJ9DB9153HOCRN0A18978D4F43083E917E1B9A52CC0DA7.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/3/LF/ASFNRSYJBJ9DB9153HOCRN.uasset'
+[2024.11.11-15.10.52:143][418]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/4/4F/5DRR52B13RGCEZCO9JKGPO
+[2024.11.11-15.10.52:143][418]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/5DRR52B13RGCEZCO9JKGPO93CB7118405BA3E4AAED7CA56CB92260.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/4/4F/5DRR52B13RGCEZCO9JKGPO.uasset'
+[2024.11.11-15.10.52:150][418]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/NewMap/3/SR/F4NZWM7NRKFALV1SQ8DS0K
+[2024.11.11-15.10.52:150][418]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/F4NZWM7NRKFALV1SQ8DS0KE1D5C4E8488936B896924A9E6D023A76.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/NewMap/3/SR/F4NZWM7NRKFALV1SQ8DS0K.uasset'
+[2024.11.11-15.10.52:193][418]LogFileHelpers: InternalPromptForCheckoutAndSave took 177.984 ms (total: 7.84 sec)
+[2024.11.11-15.10.52:258][418]LogContentValidation: Display: Starting to validate 4 assets
+[2024.11.11-15.10.52:258][418]LogContentValidation: Enabled validators:
+[2024.11.11-15.10.52:258][418]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.11-15.10.52:258][418]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.11-15.10.52:258][418]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.11-15.10.52:258][418]LogContentValidation: Display: Validating asset /Game/NewMap.NewMap
+[2024.11.11-15.10.52:259][418]AssetCheck: /Game/NewMap Validating asset
+[2024.11.11-15.10.53:003][497]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.11.11-15.10.53:075][497]LogContentBundle: [NewMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.11.11-15.10.53:075][497]LogWorldPartition: Display: GenerateStreaming for 'NewMap' started...
+[2024.11.11-15.10.53:089][497]LogWorldPartition: Display: GenerateStreaming for 'NewMap' took 13.829 ms (total: 1.81 sec)
+[2024.11.11-15.10.53:113][497]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.11-15.10.53:113][497]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2024.11.11-15.10.53:134][497]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020227s)
+[2024.11.11-15.10.53:134][497]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.020294s)
+[2024.11.11-15.10.53:159][497]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2024.11.11-15.10.53:161][497]LogWorldMetrics: [UWorldMetricsSubsystem::Initialize]
+[2024.11.11-15.10.53:162][497]LogWorldPartition: ULevel::OnLevelLoaded(NewMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.11.11-15.10.53:162][497]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.11.11-15.10.53:162][497]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UEDPIE_0_NewMap.NewMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.11.11-15.10.53:162][497]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.11.11-15.10.53:169][497]LogContentBundle: [NewMap(Standalone)] Creating new container.
+[2024.11.11-15.10.53:169][497]LogWorldPartition: Display: WorldPartition initialize took 7.390 ms (total: 1.82 sec)
+[2024.11.11-15.10.53:169][497]LogPlayLevel: PIE: World Init took: (0.008487s)
+[2024.11.11-15.10.53:458][497]LogAudio: Display: Creating Audio Device:                 Id: 175, Scope: Unique, Realtime: True
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.11-15.10.53:458][497]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.11-15.10.53:459][497]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.11-15.10.53:459][497]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.11-15.10.53:459][497]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.11-15.10.53:459][497]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.11-15.10.53:461][497]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.11-15.10.53:496][497]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Synaptics HD Audio)
+[2024.11.11-15.10.53:496][497]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.11-15.10.53:496][497]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.11-15.10.53:496][497]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.11-15.10.53:497][497]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=175
+[2024.11.11-15.10.53:497][497]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=175
+[2024.11.11-15.10.53:498][497]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=175
+[2024.11.11-15.10.53:498][497]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=175
+[2024.11.11-15.10.53:498][497]LogInit: FAudioDevice initialized with ID 175.
+[2024.11.11-15.10.53:499][497]LogAudio: Display: Audio Device (ID: 175) registered with world 'NewMap'.
+[2024.11.11-15.10.53:499][497]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 175
+[2024.11.11-15.10.53:502][497]LogLoad: Game class is 'GameModeBase'
+[2024.11.11-15.10.53:503][497]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2024.11.11-15.10.53
+[2024.11.11-15.10.53:503][497]LogWorld: Bringing up level for play took: 0.001452
+[2024.11.11-15.10.53:505][497]LogOnline: OSS: Created online subsystem instance for: :Context_184
+[2024.11.11-15.10.53:507][497]LogStreaming: Display: FlushAsyncLoading(): 17 QueuedPackages, 0 AsyncPackages
+[2024.11.11-15.10.53:555][497]LogTemp: Warning: Started!
+[2024.11.11-15.10.53:555][497]LogTemp: Display: Water - 10
+[2024.11.11-15.10.53:555][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:555][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:558][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:558][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:560][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:560][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:560][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:560][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:560][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:560][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:561][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:561][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:561][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:561][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:561][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:561][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:564][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:564][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:565][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:565][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:566][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:566][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:568][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:568][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:570][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:571][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:571][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:573][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:573][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:574][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:580][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:580][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:581][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:581][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:581][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:581][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:583][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:584][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:584][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:584][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:587][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:587][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:589][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:594][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:596][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:596][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:598][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:598][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:602][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:603][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:603][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:604][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:605][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:607][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:607][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:607][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:607][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:608][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:609][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:609][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:609][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:611][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:612][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:612][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:613][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:613][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:614][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:614][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:615][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:619][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:619][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:620][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:620][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:624][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:624][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:625][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:626][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:627][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:628][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:629][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:629][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:631][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:631][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:632][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:632][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:634][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:635][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:635][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:636][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:636][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:636][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:636][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:637][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:638][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:638][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:638][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:639][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:639][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:639][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:640][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:641][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:641][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:642][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:642][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:643][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:644][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:649][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:650][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:650][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:651][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:652][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:652][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:653][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:655][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:655][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:655][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:656][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:657][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:657][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:657][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:657][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:658][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:659][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:659][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:659][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:659][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:660][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:660][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:660][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:660][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:661][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:662][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:662][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:663][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:663][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:666][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:666][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:667][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:667][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:667][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:668][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:668][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:669][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:669][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:669][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:671][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:672][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:672][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:672][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:673][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:673][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:673][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:673][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:674][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:675][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:675][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:676][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:678][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:678][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:678][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:682][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:682][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:682][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:683][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:684][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:684][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:685][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:686][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:686][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:686][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:686][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:686][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:687][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:687][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:691][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:692][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:693][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:693][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:694][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:694][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:694][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:695][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:695][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:696][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:696][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:697][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:698][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:699][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:699][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:700][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:701][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:705][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:706][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:714][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:715][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:716][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:716][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:717][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:718][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:718][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:719][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:720][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:721][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:722][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:722][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:722][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:723][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:723][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:724][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:724][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:724][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:725][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:725][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:725][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:728][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:730][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:731][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:731][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:731][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:732][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:732][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:733][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:735][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:736][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:736][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:737][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:737][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:737][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:738][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:739][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:740][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:742][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:751][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:752][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:756][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:758][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:760][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:762][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:763][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:765][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:767][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:768][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:769][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:769][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:770][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:771][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:775][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:776][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:781][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:781][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:785][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:788][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:789][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:789][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:791][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:794][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:795][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:795][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:796][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:797][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:798][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:801][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:804][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:805][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:805][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:806][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:807][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:807][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:807][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:810][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:810][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:811][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:813][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:814][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:815][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:815][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:816][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:816][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:816][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:818][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:818][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:820][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:823][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:824][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:824][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:826][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:827][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:828][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:830][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:832][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:834][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:836][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:836][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:837][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:838][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:843][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:844][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:844][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:847][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:847][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:848][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:854][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:854][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:859][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:860][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:864][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:864][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:865][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:868][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:868][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:868][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:870][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:870][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:870][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:870][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:871][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:873][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:877][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:878][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:878][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:879][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:879][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:880][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:881][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:882][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:883][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:884][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:885][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:885][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:886][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:886][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:886][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:886][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:888][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:888][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:889][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:889][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:889][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:891][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:891][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:891][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:893][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:893][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:893][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:894][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:895][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:898][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:898][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:898][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:900][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:901][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:902][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:902][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:903][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:907][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:908][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:912][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:913][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:915][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:916][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:917][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:917][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:917][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:918][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:918][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:921][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:923][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:923][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:925][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:926][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:927][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:928][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:929][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:929][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:932][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:932][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:933][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:935][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:936][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:936][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:937][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:937][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:939][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:940][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:940][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:941][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:942][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:942][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:944][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:945][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:945][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:948][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:949][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:950][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:950][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:950][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:952][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:952][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:952][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:953][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:953][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:954][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:959][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:961][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:963][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:964][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:966][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:967][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:969][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:970][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:971][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:973][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:976][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:977][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:979][497]LogTemp: Display: Water!
+[2024.11.11-15.10.53:979][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:980][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:980][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:994][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:995][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:996][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:999][497]LogTemp: Display: OVERLAP
+[2024.11.11-15.10.53:999][497]LogTemp: Warning: Finished!
+[2024.11.11-15.10.57:350][497]PIE: Server logged in
+[2024.11.11-15.10.57:352][497]PIE: Play in editor total start time 4.343 seconds.
+[2024.11.11-15.10.58:652][497]LogAutomationController: Ignoring very large delta of 5.65 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.11.11-15.11.08:551][148]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.11.08:551][148]LogWorld: BeginTearingDown for /Game/UEDPIE_0_NewMap
+[2024.11.11-15.11.08:570][148]LogWorld: UWorld::CleanupWorld for NewMap, bSessionEnded=true, bCleanupResources=true
+[2024.11.11-15.11.08:673][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.11.08:677][148]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UEDPIE_0_NewMap.NewMap
+[2024.11.11-15.11.08:677][148]LogContentBundle: [NewMap(Standalone)] Deleting container.
+[2024.11.11-15.11.08:683][148]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.11-15.11.08:683][148]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.11-15.11.08:688][148]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.11-15.11.08:710][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.11-15.11.08:792][148]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.11-15.11.08:792][148]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 175
+[2024.11.11-15.11.08:792][148]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=175
+[2024.11.11-15.11.08:794][148]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=175
+[2024.11.11-15.11.08:966][148]LogUObjectHash: Compacting FUObjectHashTables data took   3.79ms
+[2024.11.11-15.11.09:356][149]LogPlayLevel: Display: Destroying online subsystem :Context_184
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: ================================================
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Total job queries 394, among them cache hits 149 (37.82%), DDC hits 151 (38.32%), Duplicates 9 (2.28%)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Tracking 236 distinct input hashes that result in 224 distinct outputs (94.92%)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: RAM used: 7.16 MiB of 1.60 GiB budget. Usage: 0.44%
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Shaders Compiled: 85
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Jobs assigned 85, completed 85 (100%)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Average time worker was idle: 874.81 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.15 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Job execution time: average 1.02 s, max 1.97 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Job life time (pending + execution): average 1.08 s, max 2.07
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Shader code size: average 40.271 KiB, min 27.629 KiB, max 54.207 KiB
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 20.74 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.01%
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Jobs were issued in 85 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Average processing rate: 4.10 jobs/sec
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Total thread time: 49.86 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Total thread preprocess time: 5.487 s
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Percentage time preprocessing: 11.01%
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Effective parallelization: 2.40 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled    7 times, average 1.03 sec, max 1.11 sec, min 0.93 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight (compiled    7 times, average 0.64 sec, max 0.68 sec, min 0.61 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: TBasePassPSFPrecomputedVolumetricLightmapLightingPolicySkylight (compiled    7 times, average 0.63 sec, max 0.67 sec, min 0.58 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:        TBasePassPSFCachedPointIndirectLightingPolicySkylight (compiled    7 times, average 0.62 sec, max 0.66 sec, min 0.58 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:                TBasePassPSFCachedPointIndirectLightingPolicy (compiled    7 times, average 0.61 sec, max 0.63 sec, min 0.58 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:                                             FDebugViewModePS - 14.45% of total time (compiled    7 times, average 1.03 sec, max 1.11 sec, min 0.93 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 9.75% of total time (compiled   10 times, average 0.49 sec, max 0.73 sec, min 0.41 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight - 8.92% of total time (compiled    7 times, average 0.64 sec, max 0.68 sec, min 0.61 sec)
+[2024.11.11-15.11.16:800][709]LogShaderCompilers: Display: TBasePassPSFPrecomputedVolumetricLightmapLightingPolicySkylight - 8.83% of total time (compiled    7 times, average 0.63 sec, max 0.67 sec, min 0.58 sec)
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display:        TBasePassPSFCachedPointIndirectLightingPolicySkylight - 8.72% of total time (compiled    7 times, average 0.62 sec, max 0.66 sec, min 0.58 sec)
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: === Material stats ===
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Materials Cooked:        0
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Materials Translated:    152
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Material Total Translate Time: 0.23 s
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Material Translation Only: 0.04 s (16%)
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: Material Cache Hits: 17 (11%)
+[2024.11.11-15.11.16:801][709]LogShaderCompilers: Display: ================================================
