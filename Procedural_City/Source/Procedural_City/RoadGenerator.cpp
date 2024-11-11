@@ -76,8 +76,8 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* current)
 {
-	//Generate forward road if max length not reached
-	if (current->roadLength < maxMainRoadLength)
+	//Generate forward road if max length not reached		added some variance in size dont know if i like this + FMath::RandRange(-5, 5)
+	if (current->roadLength < maxMainRoadLength + FMath::RandRange(-10, 10))
 	{
 		if (current->segment->roadType == ERoadType::Main)
 		{
@@ -90,8 +90,16 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	}
 	else if (current->segment->roadType == ERoadType::Main)
 	{
+
 		AddRoadSide(segQ, current, true, ERoadType::Main);
 		AddRoadSide(segQ, current, false, ERoadType::Main);
+
+		//chance road continues
+		if (randFloat() < 0.75)
+		{
+			current->roadLength = 0;
+			AddForwardRoad(segQ, current, ERoadType::Main);
+		}
 	}
 
 	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
@@ -198,5 +206,6 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 
 float ARoadGenerator::randFloat()
 {
+	//FMath::RandRange(0, 1)
 	return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 }
