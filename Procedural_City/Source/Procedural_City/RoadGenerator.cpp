@@ -28,6 +28,9 @@ void ARoadGenerator::Tick(float DeltaTime)
 
 TArray<FRoad> ARoadGenerator::GenerateRoads()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Started!"));
+	UE_LOG(LogTemp, Display, TEXT("Water - %i"), water.Num());
+
 	TArray<FRoad> finalNetwork;
 
 	TArray<FProposedRoad*> propQ;
@@ -66,6 +69,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
 
+	UE_LOG(LogTemp, Warning, TEXT("Finished!"));
 	return finalNetwork;
 }
 
@@ -177,4 +181,9 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 	}
 
 	return true;
+}
+
+float ARoadGenerator::randFloat()
+{
+	return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 }
