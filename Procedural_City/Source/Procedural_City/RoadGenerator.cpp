@@ -29,7 +29,7 @@ void ARoadGenerator::Tick(float DeltaTime)
 TArray<FRoad> ARoadGenerator::GenerateRoads()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Started!"));
-	UE_LOG(LogTemp, Display, TEXT("Water - %i"), water.Num());
+	//UE_LOG(LogTemp, Display, TEXT("Water - %i"), water.Num());
 
 	TArray<FRoad> finalNetwork;
 
@@ -41,6 +41,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 	initSeg->Start = FVector(0, 0, 0);
 	initSeg->End = initSeg->Start + roadStep;
 	initSeg->turnPoint = roadStep;
+	initSeg->roadType = ERoadType::Main;
 
 	initRoad->segment = initSeg;
 	initRoad->rotator = FRotator(0, 0, 0);
@@ -78,29 +79,39 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	//Generate forward road if max length not reached
 	if (current->roadLength < maxMainRoadLength)
 	{
-		AddForwardRoad(segQ, current);
+		if (current->segment->roadType == ERoadType::Main)
+		{
+			AddForwardRoad(segQ, current, ERoadType::Main);
+		}
+		else
+		{
+			AddForwardRoad(segQ, current, ERoadType::Secondary);
+		}
+	}
+	else if (current->segment->roadType == ERoadType::Main)
+	{
+		AddRoadSide(segQ, current, true, ERoadType::Main);
+		AddRoadSide(segQ, current, false, ERoadType::Main);
 	}
 
 	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
-	if (randFloat() < roadBranchChance && branchCounter <= branchCap)
+	if (randFloat() < roadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
 	{
 		//flip flop for left and right roads
 		if (randFloat() < 0.5)
 		{
-			//UE_LOG(LogTemp, Display, TEXT("left road"));
-			AddRoadSide(segQ, current, true);
+			AddRoadSide(segQ, current, true, ERoadType::Secondary);
 		}
 		else
 		{
-			//UE_LOG(LogTemp, Display, TEXT("left road"));
-			AddRoadSide(segQ, current, false);
+			AddRoadSide(segQ, current, false, ERoadType::Secondary);
 		}
 
 		branchCounter++;
 	}
 }
 
-void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous)
+void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, ERoadType newType)
 {
 	//UE_LOG(LogTemp, Display, TEXT("ForwardRoad"));
 
@@ -115,13 +126,14 @@ void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad*
 	newSeg->Start = prevSeg->End;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = prevSeg->End - prevSeg->Start;
+	newSeg->roadType = newType;
 	
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = previous->roadLength + 1;
 	segQ.Push(newPropRoad);
 }
 
-void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left)
+void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left, ERoadType type)
 {
 	FProposedRoad* newPropRoad = new FProposedRoad();
 	FRoad* newSeg = new FRoad();
@@ -136,6 +148,7 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 	newSeg->Start = (prevSeg->End - prevSeg->Start) / 2 + prevSeg->Start + offsetDirection;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = newSeg->End - newSeg->Start;
+	newSeg->roadType = type;
 
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = 1;

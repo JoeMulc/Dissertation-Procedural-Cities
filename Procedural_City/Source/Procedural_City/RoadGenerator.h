@@ -7,7 +7,14 @@
 #include "stdlib.h"
 #include "RoadGenerator.generated.h"
 
- 
+UENUM(BlueprintType)
+enum class ERoadType : uint8 {
+	Main       UMETA(DisplayName = "Main"),
+	Secondary        UMETA(DisplayName = "Secondary"),
+	Tertiary        UMETA(DisplayName = "Tertiary"),
+};
+
+
 USTRUCT(BlueprintType)
 struct FRoad
 {
@@ -17,6 +24,7 @@ struct FRoad
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FVector End;
 	//terrible name
 	UPROPERTY(EditAnywhere, BlueprintReadWrite) FVector turnPoint;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite) ERoadType roadType;
 };
 
 struct FProposedRoad
@@ -24,10 +32,11 @@ struct FProposedRoad
 	FRoad* segment;
 	FRotator rotator;
 	FRotator varianceRotor;
-
 	//Number of segments on this road line
 	int32 roadLength;
 };
+
+
 
 UCLASS()
 class PROCEDURAL_CITY_API ARoadGenerator : public AActor
@@ -60,9 +69,9 @@ public:
 
 	void AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* current);
 
-	void AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous);
+	void AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, ERoadType newType);
 
-	void AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left);
+	void AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left, ERoadType newType);
 
 	bool CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current);
 

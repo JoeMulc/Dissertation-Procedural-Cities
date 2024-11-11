@@ -15,18 +15,18 @@ struct FRoad;
 #endif
 #define PROCEDURAL_CITY_RoadGenerator_generated_h
 
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_14_GENERATED_BODY \
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRoad_Statics; \
 	PROCEDURAL_CITY_API static class UScriptStruct* StaticStruct();
 
 
 template<> PROCEDURAL_CITY_API UScriptStruct* StaticStruct<struct FRoad>();
 
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGenerateRoads);
 
 
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_INCLASS_NO_PURE_DECLS \
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesARoadGenerator(); \
 	friend struct Z_Construct_UClass_ARoadGenerator_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(ARoadGenerator)
 
 
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_ENHANCED_CONSTRUCTORS \
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ARoadGenerator(ARoadGenerator&&); \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~ARoadGenerator();
 
 
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_32_PROLOG
-#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_GENERATED_BODY \
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_41_PROLOG
+#define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_INCLASS_NO_PURE_DECLS \
-	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_35_ENHANCED_CONSTRUCTORS \
+	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_INCLASS_NO_PURE_DECLS \
+	FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_44_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,5 +63,14 @@ template<> PROCEDURAL_CITY_API UClass* StaticClass<class ARoadGenerator>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Procedural_City_Source_Procedural_City_RoadGenerator_h
 
+
+#define FOREACH_ENUM_EROADTYPE(op) \
+	op(ERoadType::Main) \
+	op(ERoadType::Secondary) \
+	op(ERoadType::Tertiary) 
+
+enum class ERoadType : uint8;
+template<> struct TIsUEnumClass<ERoadType> { enum { Value = true }; };
+template<> PROCEDURAL_CITY_API UEnum* StaticEnum<ERoadType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
