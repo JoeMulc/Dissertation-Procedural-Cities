@@ -47,21 +47,23 @@ public:
 	// Sets default values for this actor's properties
 	ARoadGenerator();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 maxRoads = 10000.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Road Generation|General") int32 maxRoads = 10000.f;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FVector roadStep = FVector(200, 0, 0);
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") FVector roadStep = FVector(200, 0, 0);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 branchCap = 15;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") int32 branchCap = 15;
 
 	int32 branchCounter = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) float roadBranchChance = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadBranchChance = 0.1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) float maxMainRoadLength = 50;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 0.1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) float intensity = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float maxMainRoadLength = 50;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) TArray<AActor*> water;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") float intensity = 0.1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|World Constraints") TArray<AActor*> water;
 
 
 

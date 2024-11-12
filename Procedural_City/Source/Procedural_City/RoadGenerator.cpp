@@ -91,7 +91,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	else if (current->segment->roadType == ERoadType::Main)
 	{
 
-		if (randFloat() < 0.5)
+		if (randFloat() > 0.5)
 		{
 			AddRoadSide(segQ, current, true, ERoadType::Main);
 			AddRoadSide(segQ, current, false, ERoadType::Main);
@@ -106,7 +106,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	}
 
 	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
-	if (randFloat() < roadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
+	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
 	{
 		//flip flop for left and right roads
 		if (randFloat() < 0.5)
