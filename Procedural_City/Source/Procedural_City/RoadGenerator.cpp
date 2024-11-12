@@ -81,7 +81,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	{
 	case(ERoadType::Main):
 
-		if (current->roadLength <= maxMainRoadLength)
+		if (current->roadLength <= maxMainRoadLength + FMath::RandRange(-maxMainRoadLength / 10, maxMainRoadLength/ 10))
 		{
 			AddForwardRoad(segQ, current, ERoadType::Main);
 		}
@@ -135,14 +135,14 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	{
 		if (randFloat() < 0.5)
 		{
-			AddRoadSide(segQ, current, true, ERoadType::Main);
+			AddRoadSide(segQ, current, true, ERoadType::Secondary);
 		}
 		else
 		{
-			AddRoadSide(segQ, current, false, ERoadType::Main);
+			AddRoadSide(segQ, current, false, ERoadType::Secondary);
 		}
 	}
-	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
+	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Main)
 	{
 		if (randFloat() < 0.5)
 		{
