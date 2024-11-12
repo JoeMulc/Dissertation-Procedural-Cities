@@ -91,11 +91,14 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	else if (current->segment->roadType == ERoadType::Main)
 	{
 
-		AddRoadSide(segQ, current, true, ERoadType::Main);
-		AddRoadSide(segQ, current, false, ERoadType::Main);
+		if (randFloat() < 0.5)
+		{
+			AddRoadSide(segQ, current, true, ERoadType::Main);
+			AddRoadSide(segQ, current, false, ERoadType::Main);
+		}
 
 		//chance road continues
-		if (randFloat() < 0.75)
+		if (randFloat() < 0.5)
 		{
 			current->roadLength = 0;
 			AddForwardRoad(segQ, current, ERoadType::Main);
