@@ -1168,3 +1168,137 @@ _MatTransl_3B7A55D3409170328211A060FC2E3BB1E263C720_BBD650804D314CE7A44ADF9BB4F3
 [2024.11.12-13.01.46:535][603]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
 [2024.11.12-13.01.46:924][604]LogPlayLevel: Display: Destroying online subsystem :Context_5
 [2024.11.12-13.01.48:816][726]LogDerivedDataCache: C:/Users/2100609/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2024.11.12-13.02.45:432][902]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2024.11.12-13.02.49:577][902]LogSlate: Window 'Save Content' being destroyed
+[2024.11.12-13.02.49:586][902]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.12-13.02.49:656][902]LogPackageLocalizationCache: Processed 51 localized package path(s) for 1 prioritized culture(s) in 0.011387 seconds
+[2024.11.12-13.02.49:658][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/4/ZF/M6QKKEJNX1YDCMZO2EUT6R
+[2024.11.12-13.02.49:659][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/M6QKKEJNX1YDCMZO2EUT6RF103CBB141E787C8FD61269764686976.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/4/ZF/M6QKKEJNX1YDCMZO2EUT6R.uasset'
+[2024.11.12-13.02.49:663][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/C/D1/02NXII6GN2JB2KHRR8GB5B
+[2024.11.12-13.02.49:664][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/02NXII6GN2JB2KHRR8GB5B1100DBE14982C3B6F556EAADF116836C.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/C/D1/02NXII6GN2JB2KHRR8GB5B.uasset'
+[2024.11.12-13.02.49:667][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/8/IO/KQQF57YI6RJGJXPKAO1EU4
+[2024.11.12-13.02.49:668][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/KQQF57YI6RJGJXPKAO1EU4E8E43B38465C09ECC02928BF6B0B9DC3.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/8/IO/KQQF57YI6RJGJXPKAO1EU4.uasset'
+[2024.11.12-13.02.49:671][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/6/1D/0J9MGB1UT8IDAWO3HY4H7N
+[2024.11.12-13.02.49:672][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/0J9MGB1UT8IDAWO3HY4H7NFFF52F0F4997AC126E1E779FB8BC5D48.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/6/1D/0J9MGB1UT8IDAWO3HY4H7N.uasset'
+[2024.11.12-13.02.49:676][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/A/KW/7X9D3U0F6SEB1VVOQ7MA8M
+[2024.11.12-13.02.49:676][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/7X9D3U0F6SEB1VVOQ7MA8MDA6C39014C918C783EC133836598660D.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/A/KW/7X9D3U0F6SEB1VVOQ7MA8M.uasset'
+[2024.11.12-13.02.49:680][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/2/LN/BV8J3AKB4V6CW8B5TLBOF7
+[2024.11.12-13.02.49:681][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/BV8J3AKB4V6CW8B5TLBOF7926821E24BF9449A2697A8A9BE99B33D.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/2/LN/BV8J3AKB4V6CW8B5TLBOF7.uasset'
+[2024.11.12-13.02.49:684][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/E/O7/YX09DF82WSUAMPD0NB9AMM
+[2024.11.12-13.02.49:685][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/YX09DF82WSUAMPD0NB9AMM3B60D52A4E2B926748DEB0A2CB48D75E.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/E/O7/YX09DF82WSUAMPD0NB9AMM.uasset'
+[2024.11.12-13.02.49:688][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/5/2X/OHNVEQB46F1M8SKE97H9PN
+[2024.11.12-13.02.49:689][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/OHNVEQB46F1M8SKE97H9PN4CDB1CDE432BDD449AAABC9FFAE1E486.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/5/2X/OHNVEQB46F1M8SKE97H9PN.uasset'
+[2024.11.12-13.02.49:692][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/4/N1/2ZM9C8IK7QG4WFZD6Q7BSJ
+[2024.11.12-13.02.49:693][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/2ZM9C8IK7QG4WFZD6Q7BSJ79BC676D403C3A2B7C67B989EAEA1510.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/4/N1/2ZM9C8IK7QG4WFZD6Q7BSJ.uasset'
+[2024.11.12-13.02.49:696][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/B/JK/TUXIK6FYX1D5BPRAQ2BT03
+[2024.11.12-13.02.49:697][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/TUXIK6FYX1D5BPRAQ2BT035C0E277844E6CAEC81EC5B950099269E.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/B/JK/TUXIK6FYX1D5BPRAQ2BT03.uasset'
+[2024.11.12-13.02.49:700][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/3/Z2/1UT0PZ2IFQSVY7KKK2FIOD
+[2024.11.12-13.02.49:701][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/1UT0PZ2IFQSVY7KKK2FIODB7309918483811896127DC958298E686.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/3/Z2/1UT0PZ2IFQSVY7KKK2FIOD.uasset'
+[2024.11.12-13.02.49:704][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/B/BV/9ZOE5OWPKIYWTXM73HBT3J
+[2024.11.12-13.02.49:705][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/9ZOE5OWPKIYWTXM73HBT3J4EFC35CE4A3A5E7D9BAF7B8324D9CE83.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/B/BV/9ZOE5OWPKIYWTXM73HBT3J.uasset'
+[2024.11.12-13.02.49:709][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/6/64/K5UAMGV9PAZANG5G27DWVF
+[2024.11.12-13.02.49:710][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/K5UAMGV9PAZANG5G27DWVF241B9162418AD751C9AACDB8FB198145.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/6/64/K5UAMGV9PAZANG5G27DWVF.uasset'
+[2024.11.12-13.02.49:714][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/4/EB/0PATI29LVHPRQY24PR4XTW
+[2024.11.12-13.02.49:715][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/0PATI29LVHPRQY24PR4XTWAC392CA240D1964A322248A9A2A3F279.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/4/EB/0PATI29LVHPRQY24PR4XTW.uasset'
+[2024.11.12-13.02.49:718][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/C/PY/T54FOIFOTBGVOLZUPR3X76
+[2024.11.12-13.02.49:719][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/T54FOIFOTBGVOLZUPR3X76A7499A6A46AF7CFCEC4BBC8FAE1C5685.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/C/PY/T54FOIFOTBGVOLZUPR3X76.uasset'
+[2024.11.12-13.02.49:723][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/B/GQ/E6N0QF0JREV3FCAPDR9NLB
+[2024.11.12-13.02.49:724][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/E6N0QF0JREV3FCAPDR9NLBFA1C6C06427ABCE383B9D6A12B72F475.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/B/GQ/E6N0QF0JREV3FCAPDR9NLB.uasset'
+[2024.11.12-13.02.49:727][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/F/57/DBA9AA3APR3SS8BW2LLVRJ
+[2024.11.12-13.02.49:728][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/DBA9AA3APR3SS8BW2LLVRJA301FB444F7753FF8B9A0384BCA8D6EA.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/F/57/DBA9AA3APR3SS8BW2LLVRJ.uasset'
+[2024.11.12-13.02.49:732][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/B/LW/B0P4MN1Y1TCNHAY2PTE2I9
+[2024.11.12-13.02.49:733][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/B0P4MN1Y1TCNHAY2PTE2I99B4A0E674226B506FF178FB0FD1108B2.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/B/LW/B0P4MN1Y1TCNHAY2PTE2I9.uasset'
+[2024.11.12-13.02.49:737][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/5/SY/76Q83C8MHUMAY8SC8HZ3ON
+[2024.11.12-13.02.49:738][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/76Q83C8MHUMAY8SC8HZ3OND049F02249919F55D6E1A49DFEE20BB7.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/5/SY/76Q83C8MHUMAY8SC8HZ3ON.uasset'
+[2024.11.12-13.02.49:742][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/A/VP/6A5YQ0YKJ55I3ORUUP3RQ7
+[2024.11.12-13.02.49:743][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/6A5YQ0YKJ55I3ORUUP3RQ7DF9E86DD45199D4D5CD2E6970C085F74.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/A/VP/6A5YQ0YKJ55I3ORUUP3RQ7.uasset'
+[2024.11.12-13.02.49:746][902]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Manhattan/C/E7/39IEFHLC7615CB1D24JDAM
+[2024.11.12-13.02.49:747][902]LogSavePackage: Moving 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Saved/39IEFHLC7615CB1D24JDAM82C960E04A97472CB284C4B26DF91A84.tmp' to 'D:/LocalWorkDir/2100609/ProceduralCity/Dissertation-Procedural-Cities/Procedural_City/Content/__ExternalActors__/Manhattan/C/E7/39IEFHLC7615CB1D24JDAM.uasset'
+[2024.11.12-13.02.49:826][902]LogFileHelpers: InternalPromptForCheckoutAndSave took 238.658 ms
+[2024.11.12-13.02.49:861][902]LogStall: Shutdown...
+[2024.11.12-13.02.49:865][902]LogStall: Shutdown complete.
+[2024.11.12-13.02.49:942][902]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-13.02.49:942][902]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-13.02.50:002][902]LogSlate: Window 'Procedural_City - Unreal Editor' being destroyed
+[2024.11.12-13.02.50:077][902]LogContentValidation: Display: Starting to validate 21 assets
+[2024.11.12-13.02.50:077][902]LogContentValidation: Enabled validators:
+[2024.11.12-13.02.50:077][902]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2024.11.12-13.02.50:077][902]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2024.11.12-13.02.50:077][902]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2024.11.12-13.02.50:077][902]LogContentValidation: Display: Validating asset /Game/Manhattan.Manhattan
+[2024.11.12-13.02.50:077][902]AssetCheck: /Game/Manhattan Validating asset
+[2024.11.12-13.02.50:406][902]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2024.11.12-13.02.50:410][903]Cmd: QUIT_EDITOR
+[2024.11.12-13.02.50:410][903]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2024.11.12-13.02.50:417][903]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2024.11.12-13.02.50:418][903]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2024.11.12-13.02.50:418][903]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2024.11.12-13.02.50:418][903]LogWorld: UWorld::CleanupWorld for Manhattan, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-13.02.50:418][903]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-13.02.50:418][903]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/Manhattan.Manhattan
+[2024.11.12-13.02.50:419][903]LogContentBundle: [Manhattan(Standalone)] Deleting container.
+[2024.11.12-13.02.50:419][903]LogWorldMetrics: [UWorldMetricsSubsystem::Deinitialize]
+[2024.11.12-13.02.50:419][903]LogWorldMetrics: [UWorldMetricsSubsystem::Clear]
+[2024.11.12-13.02.50:426][903]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2024.11.12-13.02.50:428][903]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-13.02.50:428][903]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-13.02.50:431][903]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-13.02.50:431][903]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-13.02.50:433][903]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-13.02.50:433][903]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-13.02.50:668][903]LogStudioTelemetry: Ended StudioTelemetry Session
+[2024.11.12-13.02.50:674][903]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroying ET Analytics provider
+[2024.11.12-13.02.50:674][903]LogAnalytics: Display: [UEEditor.Rocket.Release] Ended ET Analytics provider session
+[2024.11.12-13.02.50:674][903]LogAnalytics: Display: [UEEditor.Rocket.Release] Destroyed ET Analytics provider
+[2024.11.12-13.02.50:909][903]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2024.11.12-13.02.50:909][903]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2024.11.12-13.02.50:909][903]LogAudio: Display: Audio Device unregistered from world 'Manhattan'.
+[2024.11.12-13.02.50:909][903]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2024.11.12-13.02.50:909][903]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.11.12-13.02.50:912][903]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.11.12-13.02.50:946][903]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2024.11.12-13.02.50:946][903]LogAudio: Display: Audio Device Manager Shutdown
+[2024.11.12-13.02.50:947][903]LogWindowsTextInputMethodSystem: Activated input method: English (United Kingdom) - (Keyboard).
+[2024.11.12-13.02.50:948][903]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2024.11.12-13.02.50:949][903]LogExit: Preparing to exit.
+[2024.11.12-13.02.50:975][903]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.import_ik_rig_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.50:977][903]LogPython: Display: Object '/Engine/PythonTypes.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.11.12-13.02.52:064][903]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2024.11.12-13.02.52:080][903]LogExit: Editor shut down
+[2024.11.12-13.02.52:082][903]LogExit: Transaction tracking system shut down
+[2024.11.12-13.02.52:183][903]LogExit: Object subsystem successfully closed.
+[2024.11.12-13.02.52:266][903]LogShaderCompilers: Display: Shaders left to compile 0
+[2024.11.12-13.02.52:874][903]MemoryProfiler: Shutdown
+[2024.11.12-13.02.52:874][903]NetworkingProfiler: Shutdown
+[2024.11.12-13.02.52:874][903]LoadingProfiler: Shutdown
+[2024.11.12-13.02.52:874][903]TimingProfiler: Shutdown
+[2024.11.12-13.02.53:125][903]LogOpenImageDenoise: OIDN shutting down
+[2024.11.12-13.02.53:367][903]RenderDocPlugin: plugin has been unloaded.
+[2024.11.12-13.02.53:371][903]LogStudioTelemetry: Display: Shutdown StudioTelemetry Module
+[2024.11.12-13.02.53:391][903]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2024.11.12-13.02.53:392][903]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4ADD5EA3-49BD-C32E-AEEC-D0B45FFCFF4E%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.4.3-34507850%2B%2B%2BUE5%2BRelease-5.4&UserID=4408bb6443de2a35a5071d9b61213bfa%7C%7C9a7c8baa-b0b6-460e-9282-de77a2756414&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2024.11.12-13.02.53:435][903]LogXGEController: Cleaning working directory: C:/Users/2100609/appdata/Local/Temp/UnrealXGEWorkingDir/
+[2024.11.12-13.02.53:443][903]LogPakFile: Destroying PakPlatformFile
+[2024.11.12-13.02.53:562][903]LogD3D12RHI: ~FD3D12DynamicRHI
+[2024.11.12-13.02.53:576][903]LogExit: Exiting.
+[2024.11.12-13.02.53:598][903]Log file closed, 11/12/24 13:02:53
