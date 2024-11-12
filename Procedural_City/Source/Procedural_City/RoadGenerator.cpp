@@ -76,35 +76,44 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* current)
 {
 	//Generate forward road if max length not reached		added some variance in size dont know if i like this + FMath::RandRange(-5, 5)
-	if (current->roadLength <= maxMainRoadLength)
+
+	switch (current->segment->roadType)
 	{
-		if (current->segment->roadType == ERoadType::Main)
+	case(ERoadType::Main):
+
+		if (current->roadLength <= maxMainRoadLength)
 		{
 			AddForwardRoad(segQ, current, ERoadType::Main);
 		}
-		else
+		else if (current->segment->roadType == ERoadType::Main)
+		{
+			float decider = FMath::RandRange(0, 100);
+			UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
+			if (decider > 35)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Splitting!"));
+				AddRoadSide(segQ, current, true, ERoadType::Main);
+				AddRoadSide(segQ, current, false, ERoadType::Main);
+			}
+			//chance road continues
+			if (decider < 65)
+			{
+				UE_LOG(LogTemp, Display, TEXT("Onwards!"));
+				current->roadLength = 1;
+				AddForwardRoad(segQ, current, ERoadType::Main);
+			}
+		}
+		break;
+	case(ERoadType::Secondary):
+
+		if (current->roadLength <= MaxSecondaryRoadLength)
 		{
 			AddForwardRoad(segQ, current, ERoadType::Secondary);
 		}
+		break;
 	}
-	else if (current->segment->roadType == ERoadType::Main)
-	{
-		float decider = FMath::RandRange(0, 100);
-		UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
-		if (decider > 35)
-		{
-			UE_LOG(LogTemp, Display, TEXT("Splitting!"));
-			AddRoadSide(segQ, current, true, ERoadType::Main);
-			AddRoadSide(segQ, current, false, ERoadType::Main);
-		}
-		//chance road continues
-		if (decider < 65)
-		{
-			UE_LOG(LogTemp, Display, TEXT("Onwards!"));
-			current->roadLength = 1;
-			AddForwardRoad(segQ, current, ERoadType::Main);
-		}
-	}
+
+	
 
 	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
 	//if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)

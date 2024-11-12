@@ -246,6 +246,10 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 		{ "Category", "Road Generation|General" },
 		{ "ModuleRelativePath", "RoadGenerator.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxMainRoadLength_MetaData[] = {
+		{ "Category", "Road Generation|Main Roads" },
+		{ "ModuleRelativePath", "RoadGenerator.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_mainRoadBranchChance_MetaData[] = {
 		{ "Category", "Road Generation|Main Roads" },
 		{ "ModuleRelativePath", "RoadGenerator.h" },
@@ -254,8 +258,8 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 		{ "Category", "Road Generation|Secondary Roads" },
 		{ "ModuleRelativePath", "RoadGenerator.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxMainRoadLength_MetaData[] = {
-		{ "Category", "Road Generation|Main Roads" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxSecondaryRoadLength_MetaData[] = {
+		{ "Category", "Road Generation|Secondary Roads" },
 		{ "ModuleRelativePath", "RoadGenerator.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_intensity_MetaData[] = {
@@ -270,9 +274,10 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_maxRoads;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_roadStep;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_branchCap;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_maxMainRoadLength;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_mainRoadBranchChance;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_secondaryRoadBranchChance;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_maxMainRoadLength;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxSecondaryRoadLength;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_intensity;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_water_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_water;
@@ -290,9 +295,10 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxRoads = { "maxRoads", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, maxRoads), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_maxRoads_MetaData), NewProp_maxRoads_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_roadStep = { "roadStep", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, roadStep), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_roadStep_MetaData), NewProp_roadStep_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_branchCap = { "branchCap", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, branchCap), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_branchCap_MetaData), NewProp_branchCap_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxMainRoadLength = { "maxMainRoadLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, maxMainRoadLength), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_maxMainRoadLength_MetaData), NewProp_maxMainRoadLength_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_mainRoadBranchChance = { "mainRoadBranchChance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, mainRoadBranchChance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_mainRoadBranchChance_MetaData), NewProp_mainRoadBranchChance_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_secondaryRoadBranchChance = { "secondaryRoadBranchChance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, secondaryRoadBranchChance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_secondaryRoadBranchChance_MetaData), NewProp_secondaryRoadBranchChance_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxMainRoadLength = { "maxMainRoadLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, maxMainRoadLength), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_maxMainRoadLength_MetaData), NewProp_maxMainRoadLength_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_MaxSecondaryRoadLength = { "MaxSecondaryRoadLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, MaxSecondaryRoadLength), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxSecondaryRoadLength_MetaData), NewProp_MaxSecondaryRoadLength_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_intensity = { "intensity", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, intensity), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_intensity_MetaData), NewProp_intensity_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_water_Inner = { "water", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ARoadGenerator_Statics::NewProp_water = { "water", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ARoadGenerator, water), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_water_MetaData), NewProp_water_MetaData) };
@@ -300,9 +306,10 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ARoadGene
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxRoads,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_roadStep,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_branchCap,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxMainRoadLength,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_mainRoadBranchChance,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_secondaryRoadBranchChance,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_maxMainRoadLength,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_MaxSecondaryRoadLength,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_intensity,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_water_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARoadGenerator_Statics::NewProp_water,
@@ -354,10 +361,10 @@ struct Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGene
 		{ FRoad::StaticStruct, Z_Construct_UScriptStruct_FRoad_Statics::NewStructOps, TEXT("Road"), &Z_Registration_Info_UScriptStruct_Road, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRoad), 2773098612U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 2030612309U) },
+		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 158026784U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_2894707817(TEXT("/Script/Procedural_City"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_124083005(TEXT("/Script/Procedural_City"),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo));
