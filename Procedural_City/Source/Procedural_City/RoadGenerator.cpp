@@ -29,7 +29,6 @@ void ARoadGenerator::Tick(float DeltaTime)
 TArray<FRoad> ARoadGenerator::GenerateRoads()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Started!"));
-	//UE_LOG(LogTemp, Display, TEXT("Water - %i"), water.Num());
 
 	TArray<FRoad> finalNetwork;
 
@@ -57,7 +56,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		propQ.Pop();
 
 		//Need a placement check
-		if (CheckConstraints(finalNetwork, current))
+		if (CheckConstraints(finalNetwork, current, propQ))
 		{
 			finalNetwork.Push(*current->segment);
 			AddRoads(propQ, current);
@@ -77,7 +76,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* current)
 {
 	//Generate forward road if max length not reached		added some variance in size dont know if i like this + FMath::RandRange(-5, 5)
-	if (current->roadLength < maxMainRoadLength + FMath::RandRange(-10, 10))
+	if (current->roadLength <= maxMainRoadLength)
 	{
 		if (current->segment->roadType == ERoadType::Main)
 		{
@@ -90,25 +89,52 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	}
 	else if (current->segment->roadType == ERoadType::Main)
 	{
-
-		if (randFloat() > 0.5)
+		float decider = FMath::RandRange(0, 100);
+		UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
+		if (decider > 35)
 		{
+			UE_LOG(LogTemp, Display, TEXT("Splitting!"));
 			AddRoadSide(segQ, current, true, ERoadType::Main);
 			AddRoadSide(segQ, current, false, ERoadType::Main);
 		}
-
 		//chance road continues
-		if (randFloat() < 0.5)
+		if (decider < 65)
 		{
-			current->roadLength = 0;
+			UE_LOG(LogTemp, Display, TEXT("Onwards!"));
+			current->roadLength = 1;
 			AddForwardRoad(segQ, current, ERoadType::Main);
 		}
 	}
 
 	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
+	//if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
+	//{
+	//	//flip flop for left and right roads
+	//	if (randFloat() < 0.5)
+	//	{
+	//		AddRoadSide(segQ, current, true, ERoadType::Secondary);
+	//	}
+	//	else
+	//	{
+	//		AddRoadSide(segQ, current, false, ERoadType::Secondary);
+	//	}
+	//
+	//	branchCounter++;
+	//}
+
 	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
 	{
-		//flip flop for left and right roads
+		if (randFloat() < 0.5)
+		{
+			AddRoadSide(segQ, current, true, ERoadType::Main);
+		}
+		else
+		{
+			AddRoadSide(segQ, current, false, ERoadType::Main);
+		}
+	}
+	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
+	{
 		if (randFloat() < 0.5)
 		{
 			AddRoadSide(segQ, current, true, ERoadType::Secondary);
@@ -117,9 +143,8 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		{
 			AddRoadSide(segQ, current, false, ERoadType::Secondary);
 		}
-
-		branchCounter++;
 	}
+	
 }
 
 void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, ERoadType newType)
@@ -141,6 +166,7 @@ void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad*
 	
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = previous->roadLength + 1;
+
 	segQ.Push(newPropRoad);
 }
 
@@ -167,12 +193,12 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 
 }
 
-bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
+bool ARoadGenerator::CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current, TArray<FProposedRoad*>& segQ)
 {
-	return CheckGlobalConstraints(finalNetwork, current);
+	return CheckGlobalConstraints(finalNetwork, current, segQ);
 }
 
-bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current)
+bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current, TArray<FProposedRoad*>& segQ)
 {
 	//Get centre of proposed road
 	FVector propMid = (current->segment->End - current->segment->Start) / 2 + current->segment->Start;
