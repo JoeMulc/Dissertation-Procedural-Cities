@@ -103,12 +103,18 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 			}
 		}
 		break;
+
 	case(ERoadType::Secondary):
 
 		if (current->roadLength <= MaxSecondaryRoadLength)
 		{
 			AddForwardRoad(segQ, current, ERoadType::Secondary);
 		}
+		break;
+
+	case(ERoadType::Coastal):
+		UE_LOG(LogTemp, Display, TEXT("Coastal!"));
+		AddForwardRoad(segQ, current, ERoadType::Coastal);
 		break;
 	}
 
@@ -221,7 +227,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 		if (waterVolume->EncompassesPoint(propMid, 75.f))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Water!"));
-			if (current->segment->roadType == ERoadType::Main)
+			if (current->segment->roadType == ERoadType::Main || current->segment->roadType == ERoadType::Coastal)
 			{
 				bool coastalCreated = false;
 				float angle = 0;
@@ -232,7 +238,9 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 					current->segment->End = current->segment->Start + flarb;
 					if (!waterVolume->EncompassesPoint(current->segment->End, 75.f))
 					{
+						UE_LOG(LogTemp, Display, TEXT("Fixed!"));
 						current->roadLength = 1;
+						//current->segment->roadType = ERoadType::Coastal;
 						//current->segment->End + current->rotator.RotateVector(roadStep);
 						coastalCreated = true;
 					}
