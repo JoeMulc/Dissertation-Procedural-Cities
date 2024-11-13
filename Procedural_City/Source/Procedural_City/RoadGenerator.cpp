@@ -17,7 +17,6 @@ void ARoadGenerator::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Water", water);
 }
 
 // Called every frame
@@ -114,23 +113,6 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	}
 
 	
-
-	//Randomly crates branching road based on chance		Branch cap to limit number of branches for generation time
-	//if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
-	//{
-	//	//flip flop for left and right roads
-	//	if (randFloat() < 0.5)
-	//	{
-	//		AddRoadSide(segQ, current, true, ERoadType::Secondary);
-	//	}
-	//	else
-	//	{
-	//		AddRoadSide(segQ, current, false, ERoadType::Secondary);
-	//	}
-	//
-	//	branchCounter++;
-	//}
-
 	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
 	{
 		if (randFloat() < 0.5)
@@ -165,6 +147,8 @@ void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad*
 
 	FRoad* prevSeg = previous->segment;
 
+	intensity = newType == ERoadType::Main ? mainRoadIntensity : secondaryRoadIntensity;
+
 	newPropRoad->varianceRotor = previous->varianceRotor + FRotator(0, intensity * (randFloat() - 0.5f), 0);
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor;
 
@@ -179,22 +163,24 @@ void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad*
 	segQ.Push(newPropRoad);
 }
 
-void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left, ERoadType type)
+void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* previous, bool left, ERoadType newType)
 {
 	FProposedRoad* newPropRoad = new FProposedRoad();
 	FRoad* newSeg = new FRoad();
 
 	FRoad* prevSeg = previous->segment;
 
+	intensity = newType == ERoadType::Main ? mainRoadIntensity : secondaryRoadIntensity;
+
 	newPropRoad->varianceRotor = FRotator(0, intensity * (randFloat() - 0.5f), 0);
 	FRotator direction = left ? FRotator(0, 270, 0) : FRotator(0, 90, 0);
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor + direction;
 
-	FVector offsetDirection = left ? newPropRoad->rotator.RotateVector(FVector(200, 0, 0)) : newPropRoad->rotator.RotateVector(FVector(200, 0, 0));
+	FVector offsetDirection = left ? newPropRoad->rotator.RotateVector(FVector(200, 0, 0)) : newPropRoad->rotator.RotateVector(FVector(-200, 0, 0));
 	newSeg->Start = (prevSeg->End - prevSeg->Start) / 2 + prevSeg->Start + offsetDirection;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = newSeg->End - newSeg->Start;
-	newSeg->roadType = type;
+	newSeg->roadType = newType;
 
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = 1;
@@ -235,7 +221,28 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 		if (waterVolume->EncompassesPoint(propMid, 75.f))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Water!"));
-			return false;
+			if (current->segment->roadType == ERoadType::Main)
+			{
+				bool coastalCreated = false;
+				float angle = 0;
+				while (!coastalCreated)
+				{
+					FVector flarb = (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, 1));
+
+					current->segment->End = current->segment->Start + flarb;
+					if (!waterVolume->EncompassesPoint(current->segment->End, 75.f))
+					{
+						current->roadLength = 1;
+						//current->segment->End + current->rotator.RotateVector(roadStep);
+						coastalCreated = true;
+					}
+					angle = angle + 1;
+				}
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 

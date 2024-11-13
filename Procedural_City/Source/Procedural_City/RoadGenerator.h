@@ -9,9 +9,10 @@
 
 UENUM(BlueprintType)
 enum class ERoadType : uint8 {
-	Main       UMETA(DisplayName = "Main"),
-	Secondary        UMETA(DisplayName = "Secondary"),
-	Tertiary        UMETA(DisplayName = "Tertiary"),
+	Main	UMETA(DisplayName = "Main"),
+	Secondary	UMETA(DisplayName = "Secondary"),
+	Tertiary	UMETA(DisplayName = "Tertiary"),
+	Coastal	 UMETA(DisplayName = "Tertiary"),
 };
 
 
@@ -58,11 +59,15 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadBranchChance = 0.1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadIntensity = 0.1;
+	
+	float intensity = 0.01;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float MaxSecondaryRoadLength = 15;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") float intensity = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 0.1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadIntensity = 0.1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|World Constraints") TArray<AActor*> water;
 
