@@ -39,7 +39,7 @@ struct Z_Construct_UEnum_Procedural_City_ERoadType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "Coastal.DisplayName", "Tertiary" },
+		{ "Coastal.DisplayName", "Coastal" },
 		{ "Coastal.Name", "ERoadType::Coastal" },
 		{ "Main.DisplayName", "Main" },
 		{ "Main.Name", "ERoadType::Main" },
@@ -140,7 +140,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRoad_S
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRoad_Statics::NewProp_End = { "End", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRoad, End), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_End_MetaData), NewProp_End_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FRoad_Statics::NewProp_turnPoint = { "turnPoint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRoad, turnPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_turnPoint_MetaData), NewProp_turnPoint_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FRoad_Statics::NewProp_roadType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FRoad_Statics::NewProp_roadType = { "roadType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRoad, roadType), Z_Construct_UEnum_Procedural_City_ERoadType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_roadType_MetaData), NewProp_roadType_MetaData) }; // 1986466285
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FRoad_Statics::NewProp_roadType = { "roadType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FRoad, roadType), Z_Construct_UEnum_Procedural_City_ERoadType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_roadType_MetaData), NewProp_roadType_MetaData) }; // 151541504
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FRoad_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRoad_Statics::NewProp_Start,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FRoad_Statics::NewProp_End,
@@ -189,8 +189,8 @@ struct Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRoad, METADATA_PARAMS(0, nullptr) }; // 3047600465
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RoadGenerator_eventGenerateRoads_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3047600465
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FRoad, METADATA_PARAMS(0, nullptr) }; // 55979343
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RoadGenerator_eventGenerateRoads_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 55979343
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARoadGenerator_GenerateRoads_Statics::NewProp_ReturnValue,
@@ -292,7 +292,7 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ARoadGenerator_GenerateRoads, "GenerateRoads" }, // 700910163
+		{ &Z_Construct_UFunction_ARoadGenerator_GenerateRoads, "GenerateRoads" }, // 4179671619
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -365,16 +365,16 @@ ARoadGenerator::~ARoadGenerator() {}
 struct Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ ERoadType_StaticEnum, TEXT("ERoadType"), &Z_Registration_Info_UEnum_ERoadType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1986466285U) },
+		{ ERoadType_StaticEnum, TEXT("ERoadType"), &Z_Registration_Info_UEnum_ERoadType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 151541504U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FRoad::StaticStruct, Z_Construct_UScriptStruct_FRoad_Statics::NewStructOps, TEXT("Road"), &Z_Registration_Info_UScriptStruct_Road, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRoad), 3047600465U) },
+		{ FRoad::StaticStruct, Z_Construct_UScriptStruct_FRoad_Statics::NewStructOps, TEXT("Road"), &Z_Registration_Info_UScriptStruct_Road, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRoad), 55979343U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 1325846891U) },
+		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 2180344607U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_2049293494(TEXT("/Script/Procedural_City"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_676985540(TEXT("/Script/Procedural_City"),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo));

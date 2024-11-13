@@ -130,7 +130,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 			AddRoadSide(segQ, current, false, ERoadType::Secondary);
 		}
 	}
-	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Main)
+	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary)
 	{
 		if (randFloat() < 0.5)
 		{
@@ -231,7 +231,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 			{
 				bool coastalCreated = false;
 				float angle = 0;
-				while (!coastalCreated)
+				while (!coastalCreated || angle >= 360)
 				{
 					FVector flarb = (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, 1));
 
@@ -240,8 +240,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 					{
 						UE_LOG(LogTemp, Display, TEXT("Fixed!"));
 						current->roadLength = 1;
-						//current->segment->roadType = ERoadType::Coastal;
-						//current->segment->End + current->rotator.RotateVector(roadStep);
+						current->segment->roadType = ERoadType::Coastal;
 						coastalCreated = true;
 					}
 					angle = angle + 1;

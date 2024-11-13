@@ -12,7 +12,7 @@ enum class ERoadType : uint8 {
 	Main	UMETA(DisplayName = "Main"),
 	Secondary	UMETA(DisplayName = "Secondary"),
 	Tertiary	UMETA(DisplayName = "Tertiary"),
-	Coastal	 UMETA(DisplayName = "Tertiary"),
+	Coastal	 UMETA(DisplayName = "Coastal"),
 };
 
 
