@@ -47,7 +47,6 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 	initRoad->roadLength = 1.f;
 
 	propQ.Push(initRoad);
-
 	while (propQ.Num() > 0 && finalNetwork.Num() < maxRoads)
 	{
 		FProposedRoad* current = propQ.Last();
@@ -55,6 +54,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		propQ.Pop();
 
 		//Need a placement check
+
 		if (CheckConstraints(finalNetwork, current, propQ))
 		{
 			finalNetwork.Push(*current->segment);
@@ -87,7 +87,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		else if (current->segment->roadType == ERoadType::Main)
 		{
 			float decider = FMath::RandRange(0, 100);
-			UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
+			//UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
 			if (decider > 35)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Splitting!"));
@@ -233,8 +233,19 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 			if (current->segment->roadType == ERoadType::Main || current->segment->roadType == ERoadType::Coastal)
 			{
 				bool coastalCreated = false;
-				float angle = 0;
-		
+				double angle = (FMath::Atan2((current->segment->Start - current->segment->End).X, (current->segment->Start - current->segment->End).Y)) * 180 / 3.14;
+				angle = angle + 90;
+				if (angle < 0)
+				{
+					angle = 360 + angle;
+				}
+				else if (angle > 360)
+				{
+					angle = angle - 360;
+				}
+
+				UE_LOG(LogTemp, Warning, TEXT("Angle %f!"), angle);
+
 				while (!coastalCreated || angle >= 360)
 				{
 					
@@ -250,7 +261,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 						coastalCreated = true;
 					}
 
-					UE_LOG(LogTemp, Display, TEXT("Angle %f!"), angle);
+				
 					angle = angle + 1;
 				}
 			}
