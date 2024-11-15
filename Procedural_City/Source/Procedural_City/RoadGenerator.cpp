@@ -113,8 +113,11 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		break;
 
 	case(ERoadType::Coastal):
-		UE_LOG(LogTemp, Display, TEXT("Coastal!"));
-		AddForwardRoad(segQ, current, ERoadType::Coastal);
+		//UE_LOG(LogTemp, Display, TEXT("Coastal!"));
+		if (current->roadLength <= 2000)
+		{
+			AddForwardRoad(segQ, current, ERoadType::Coastal);
+		}
 		break;
 	}
 
@@ -211,38 +214,43 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 		FVector finalMid = (road.End - road.Start) / 2 + road.Start;
 		
 		//Check distance based on road size - magic number here fix me!!!!!!!
-		if (FVector::Dist(finalMid, propMid) < 150)
+		if (FVector::Dist(finalMid, propMid) < 150 && current->segment->roadType != ERoadType::Coastal)
 		{
 			UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
 			return false;
 		}
 	}
-
+														//REALLY SHOULD BE CHECKING FOR NULLPTRS
 	//For each water volume
 	for (AActor* w : water)
 	{
 		AVolume* waterVolume = Cast<AVolume>(w);
 		
 		//If proposed road is within the volume
-		if (waterVolume->EncompassesPoint(propMid, 75.f))
+		if (waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 10, 75.f))
 		{
 			UE_LOG(LogTemp, Display, TEXT("Water!"));
 			if (current->segment->roadType == ERoadType::Main || current->segment->roadType == ERoadType::Coastal)
 			{
 				bool coastalCreated = false;
 				float angle = 0;
+		
 				while (!coastalCreated || angle >= 360)
 				{
-					FVector flarb = (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, 1));
-
-					current->segment->End = current->segment->Start + flarb;
-					if (!waterVolume->EncompassesPoint(current->segment->End, 75.f))
+					
+					current->segment->End = current->segment->Start + (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, 1));
+		
+					if (!waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 10, 75.f))
 					{
-						UE_LOG(LogTemp, Display, TEXT("Fixed!"));
-						current->roadLength = 1;
+						UE_LOG(LogTemp, Display, TEXT("L!"));
 						current->segment->roadType = ERoadType::Coastal;
+						current->segment->turnPoint = current->segment->End - current->segment->Start;
+						current->rotator = FRotator(0, angle, 0);
+						current->roadLength = 1;
 						coastalCreated = true;
 					}
+
+					UE_LOG(LogTemp, Display, TEXT("Angle %f!"), angle);
 					angle = angle + 1;
 				}
 			}
@@ -251,6 +259,14 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 				return false;
 			}
 		}
+		//else if (waterVolume->EncompassesPoint(current->segment->Start, 75.f))
+		//{
+		//	return false;
+		//}
+		//if (waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 5, 75.f))
+		//{
+		//	current->segment->roadType = ERoadType::Coastal;
+		//}
 	}
 
 	return true;
