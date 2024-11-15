@@ -114,7 +114,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 
 	case(ERoadType::Coastal):
 		//UE_LOG(LogTemp, Display, TEXT("Coastal!"));
-		if (current->roadLength <= 2000)
+		if (current->roadLength <= 400)
 		{
 			AddForwardRoad(segQ, current, ERoadType::Coastal);
 		}
@@ -238,7 +238,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 				while (!coastalCreated || angle >= 360)
 				{
 					
-					current->segment->End = current->segment->Start + (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, 1));
+					current->segment->End = current->segment->Start + (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, -1));
 		
 					if (!waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 10, 75.f))
 					{
