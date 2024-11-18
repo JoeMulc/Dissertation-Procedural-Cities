@@ -73,3 +73,4 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 Procedural_City/Saved/Telemetry/Telemetry.json
+*.log

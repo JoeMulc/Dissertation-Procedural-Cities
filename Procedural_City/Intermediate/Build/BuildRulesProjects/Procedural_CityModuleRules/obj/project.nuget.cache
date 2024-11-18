@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8s3DneLj1tI=",
+  "dgSpecHash": "S1hDwNxioqY=",
   "success": true,
-  "projectFilePath": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
+  "projectFilePath": "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2100609\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\2100609\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",

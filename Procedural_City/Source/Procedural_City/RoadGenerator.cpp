@@ -114,7 +114,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 
 	case(ERoadType::Coastal):
 		//UE_LOG(LogTemp, Display, TEXT("Coastal!"));
-		if (current->roadLength <= 400)
+		if (current->roadLength <= 5)
 		{
 			AddForwardRoad(segQ, current, ERoadType::Coastal);
 		}
@@ -234,50 +234,51 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 			{
 				bool coastalCreated = false;
 				double angle = (FMath::Atan2((current->segment->Start - current->segment->End).X, (current->segment->Start - current->segment->End).Y)) * 180 / 3.14;
-				angle = angle + 90;
-				if (angle < 0)
-				{
-					angle = 360 + angle;
-				}
-				else if (angle > 360)
-				{
-					angle = angle - 360;
-				}
+				angle = angle - 90;
+				//if (angle < 0)
+				//{
+				//	angle = 360 + angle;
+				//}
+				//else if (angle > 360)
+				//{
+				//	angle = angle - 360;
+				//}
 
 				UE_LOG(LogTemp, Warning, TEXT("Angle %f!"), angle);
 
 				while (!coastalCreated || angle >= 360)
 				{
-					
+					if (angle < 0)
+					{
+						angle = 360 + angle;
+					}
+
 					current->segment->End = current->segment->Start + (current->segment->End - current->segment->Start).RotateAngleAxis(angle, FVector(0, 0, -1));
 		
 					if (!waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 10, 75.f))
 					{
-						UE_LOG(LogTemp, Display, TEXT("L!"));
-						current->segment->roadType = ERoadType::Coastal;
+						if (current->segment->roadType == ERoadType::Main)
+						{
+							current->roadLength = 1;
+						}
+						else
+						{
+							current->roadLength = current->roadLength +1;
+						}
+
 						current->segment->turnPoint = current->segment->End - current->segment->Start;
 						current->rotator = FRotator(0, angle, 0);
-						current->roadLength = 1;
+						current->segment->roadType = ERoadType::Coastal;
 						coastalCreated = true;
+
+						UE_LOG(LogTemp, Warning, TEXT("Done %f!"), angle);
 					}
 
-				
+					UE_LOG(LogTemp, Warning, TEXT("Moving Angle %f!"), angle);
 					angle = angle + 1;
 				}
 			}
-			else
-			{
-				return false;
-			}
 		}
-		//else if (waterVolume->EncompassesPoint(current->segment->Start, 75.f))
-		//{
-		//	return false;
-		//}
-		//if (waterVolume->EncompassesPoint(current->segment->End + (current->segment->End - current->segment->Start) * 5, 75.f))
-		//{
-		//	current->segment->roadType = ERoadType::Coastal;
-		//}
 	}
 
 	return true;

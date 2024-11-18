@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj": {}
+    "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj": {}
   },
   "projects": {
     "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Intermediate\\Build\\BuildRulesProjects\\UE5ProgramRules\\UE5ProgramRules.csproj": {
@@ -1304,14 +1304,14 @@
         }
       }
     },
-    "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj": {
+    "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
+        "projectUniqueName": "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
         "projectName": "Procedural_CityModuleRules",
-        "projectPath": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
+        "projectPath": "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
         "packagesPath": "C:\\Users\\2100609\\.nuget\\packages\\",
-        "outputPath": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\obj\\",
+        "outputPath": "D:\\LocalWorkDir\\2100609\\ProceduralCity\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
