@@ -36,17 +36,21 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 	FProposedRoad* initRoad = new FProposedRoad();
 	FRoad* initSeg = new FRoad();
 
+	//Create initial segment
 	initSeg->Start = FVector(0, 0, 0);
 	initSeg->End = initSeg->Start + roadStep;
 	initSeg->turnPoint = roadStep;
 	initSeg->roadType = ERoadType::Main;
 
+	//Create initial proposed road
 	initRoad->segment = initSeg;
 	initRoad->rotator = FRotator(0, 0, 0);
 	initRoad->varianceRotor = FRotator(0, 0, 0);
 	initRoad->roadLength = 1.f;
 
 	propQ.Push(initRoad);
+
+	//While proposed roads isnt empty and the number of semgments in the final network is less than the allowed max roads
 	while (propQ.Num() > 0 && finalNetwork.Num() < maxRoads)
 	{
 		FProposedRoad* current = propQ.Last();
@@ -55,9 +59,12 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		//Need a placement check
 
+		//Check constraints for current road
 		if (CheckConstraints(finalNetwork, current, propQ))
 		{
+			//if passes constraint check push to the final network
 			finalNetwork.Push(*current->segment);
+			//Add roads the to the road
 			AddRoads(propQ, current);
 
 		}
