@@ -205,6 +205,7 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 
 	newPropRoad->varianceRotor = FRotator(0, intensity * (randFloat() - 0.5f), 0);
 	FRotator direction = left ? FRotator(0, 270, 0) : FRotator(0, 90, 0);
+	UE_LOG(LogTemp, Display, TEXT("Direction - %f"), direction.Yaw);
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor + direction;
 
 	FVector offsetDirection = left ? newPropRoad->rotator.RotateVector(FVector(200, 0, 0)) : newPropRoad->rotator.RotateVector(FVector(-200, 0, 0));
