@@ -8546,11 +8546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
+      "projectUniqueName": "M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
       "projectName": "Procedural_CityModuleRules",
-      "projectPath": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
+      "projectPath": "M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\Procedural_CityModuleRules.csproj",
       "packagesPath": "C:\\Users\\2100609\\.nuget\\packages\\",
-      "outputPath": "D:\\LocalWorkDir\\2100609\\Procedyral_City\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\obj\\",
+      "outputPath": "M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Intermediate\\Build\\BuildRulesProjects\\Procedural_CityModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8596,7 +8596,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -8615,15 +8616,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
+            "version": "[6.0.36, 6.0.36]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
+            "version": "[6.0.36, 6.0.36]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
+            "version": "[6.0.36, 6.0.36]"
           }
         ],
         "frameworkReferences": {
@@ -8631,7 +8632,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

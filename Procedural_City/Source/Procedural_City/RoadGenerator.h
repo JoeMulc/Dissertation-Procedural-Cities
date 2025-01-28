@@ -48,6 +48,10 @@ public:
 	// Sets default values for this actor's properties
 	ARoadGenerator();
 
+	//Stream and seed
+	UPROPERTY(BlueprintReadOnly, Category = "Road Generation|Random Seed") FRandomStream stream;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Random Seed") int32 seed;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Road Generation|General") int32 maxRoads = 10000.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") FVector roadStep = FVector(200, 0, 0);
@@ -87,7 +91,6 @@ public:
 	bool CheckConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current, TArray<FProposedRoad*>& segQ);
 
 	bool CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current, TArray<FProposedRoad*>& segQ);
-
 
 	float randFloat();
 

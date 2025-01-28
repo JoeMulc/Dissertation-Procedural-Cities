@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "d:\\localworkdir\\2100609\\procedyral_city\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\procedural_city.cpp",
+        "Source": "m:\\.dissertation\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\procedural_city.cpp",
         "ProvidedModule": "",
-        "PCH": "d:\\localworkdir\\2100609\\procedyral_city\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\procedural_cityeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "m:\\.dissertation\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\procedural_cityeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "d:\\localworkdir\\2100609\\procedyral_city\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\procedural_city\\definitions.procedural_city.h",
-            "d:\\localworkdir\\2100609\\procedyral_city\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\procedural_city.h"
+            "m:\\.dissertation\\dissertation-procedural-cities\\procedural_city\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\procedural_city\\definitions.procedural_city.h",
+            "m:\\.dissertation\\dissertation-procedural-cities\\procedural_city\\source\\procedural_city\\procedural_city.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

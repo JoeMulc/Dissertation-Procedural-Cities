@@ -17,6 +17,7 @@ void ARoadGenerator::BeginPlay()
 {
 	Super::BeginPlay();
 
+	stream.Initialize(seed);
 }
 
 // Called every frame
@@ -87,28 +88,28 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	{
 	case(ERoadType::Main):
 
-		if (current->roadLength <= maxMainRoadLength + FMath::RandRange(-maxMainRoadLength / 10, maxMainRoadLength/ 10))
+		if (current->roadLength <= maxMainRoadLength + stream.RandRange(-maxMainRoadLength / 10, maxMainRoadLength/ 10))
 		{
 			AddForwardRoad(segQ, current, ERoadType::Main);
 		}
-		else if (current->segment->roadType == ERoadType::Main)
-		{
-			float decider = FMath::RandRange(0, 100);
-			//UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
-			if (decider > 10)
-			{
-				UE_LOG(LogTemp, Display, TEXT("Splitting!"));
-				AddRoadSide(segQ, current, true, ERoadType::Main);
-				AddRoadSide(segQ, current, false, ERoadType::Main);
-			}
-			//chance road continues
-			if (decider < 90)
-			{
-				UE_LOG(LogTemp, Display, TEXT("Onwards!"));
-				current->roadLength = 1;
-				AddForwardRoad(segQ, current, ERoadType::Main);
-			}
-		}
+		//else if (current->segment->roadType == ERoadType::Main)
+		//{
+		//	float decider = stream.RandRange(0, 100);
+		//	//UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
+		//	if (decider > 10)
+		//	{
+		//		UE_LOG(LogTemp, Display, TEXT("Splitting!"));
+		//		AddRoadSide(segQ, current, true, ERoadType::Main);
+		//		AddRoadSide(segQ, current, false, ERoadType::Main);
+		//	}
+		//	//chance road continues
+		//	if (decider < 90)
+		//	{
+		//		UE_LOG(LogTemp, Display, TEXT("Onwards!"));
+		//		current->roadLength = 1;
+		//		AddForwardRoad(segQ, current, ERoadType::Main);
+		//	}
+		//}
 		break;
 
 	case(ERoadType::Secondary):
@@ -133,7 +134,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	{
 		if (randFloat() < 0.5)
 		{
-			if (FMath::RandRange(0, 100) > 80)
+			if (stream.RandRange(0, 100) > 80)
 			{
 				AddRoadSide(segQ, current, true, ERoadType::Main);
 			}
@@ -144,7 +145,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		}
 		else
 		{
-			if (FMath::RandRange(0, 100) > 80)
+			if (stream.RandRange(0, 100) > 80)
 			{
 				AddRoadSide(segQ, current, false, ERoadType::Main);
 			}
@@ -296,6 +297,6 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 
 float ARoadGenerator::randFloat()
 {
-	//FMath::RandRange(0, 1)
-	return static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+	UE_LOG(LogTemp, Display, TEXT("Rand - %f"), stream.GetFraction());
+	return stream.GetFraction();
 }
