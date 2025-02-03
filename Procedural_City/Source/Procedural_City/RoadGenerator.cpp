@@ -300,6 +300,6 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 
 float ARoadGenerator::randFloat()
 {
-	UE_LOG(LogTemp, Display, TEXT("Rand - %f"), stream.GetFraction());
+	//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), stream.GetFraction());
 	return stream.GetFraction();
 }
