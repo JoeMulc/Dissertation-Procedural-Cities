@@ -48,8 +48,10 @@
     <ClCompile Include="..\..\Source\Procedural_City\WaterBoundingBox.cpp">
       <Filter>Source\Procedural_City</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\Source\Procedural_City\WaterBoundingBox.h">
-      <Filter>Source\Procedural_City</Filter>
+      <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

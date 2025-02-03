@@ -136,6 +136,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		{
 			if (stream.RandRange(0, 100) > 80)
 			{
+				UE_LOG(LogTemp, Display, TEXT("Main - Left"));
 				AddRoadSide(segQ, current, true, ERoadType::Main);
 			}
 			else
@@ -147,6 +148,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		{
 			if (stream.RandRange(0, 100) > 80)
 			{
+				UE_LOG(LogTemp, Display, TEXT("Main - Right"));
 				AddRoadSide(segQ, current, false, ERoadType::Main);
 			}
 			else
@@ -208,7 +210,7 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 	UE_LOG(LogTemp, Display, TEXT("Direction - %f"), direction.Yaw);
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor + direction;
 
-	FVector offsetDirection = left ? newPropRoad->rotator.RotateVector(FVector(200, 0, 0)) : newPropRoad->rotator.RotateVector(FVector(-200, 0, 0));
+	FVector offsetDirection = newPropRoad->rotator.RotateVector(FVector(200, 0, 0));
 	newSeg->Start = (prevSeg->End - prevSeg->Start) / 2 + prevSeg->Start + offsetDirection;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = newSeg->End - newSeg->Start;
