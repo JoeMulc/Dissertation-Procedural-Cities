@@ -134,7 +134,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	{
 		if (randFloat() < 0.5)
 		{
-			if (stream.RandRange(0, 100) > 80)
+			if (stream.RandRange(0, 100) > 30)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Main - Left"));
 				AddRoadSide(segQ, current, true, ERoadType::Main);
