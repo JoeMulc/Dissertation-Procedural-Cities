@@ -58,10 +58,8 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		propQ.Pop();
 
-		//Need a placement check
-
 		//Check constraints for current road
-		if (CheckConstraints(finalNetwork, current, propQ))
+		if (CheckConstraints(finalNetwork, current, propQ) && (current->segment->roadType != ERoadType::Secondary || mainRoadsComplete == true || current->roadLength == 1))
 		{
 			//if passes constraint check push to the final network
 			finalNetwork.Push(*current->segment);
@@ -72,7 +70,15 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		delete(current->segment);
 		delete(current);
-		//UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
+
+		if (propQ.Num() == 0 && mainCheck == false)
+		{
+			UE_LOG(LogTemp, Display, TEXT("We in here!"));
+			mainRoadsComplete = true;
+			mainCheck = true;
+		}
+
+		UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
 

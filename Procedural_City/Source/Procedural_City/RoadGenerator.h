@@ -82,6 +82,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|World Constraints") TArray<AActor*> water;
 
+	bool mainRoadsComplete = false;
+	bool mainCheck;
 
 
 	UFUNCTION(BlueprintCallable) TArray<FRoad> GenerateRoads();
