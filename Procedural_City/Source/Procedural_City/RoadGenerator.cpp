@@ -84,34 +84,19 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 {
 	//Generate forward road if max length not reached		added some variance in size dont know if i like this + FMath::RandRange(-5, 5)
 
+	//Switch on road type for adding a forward road
 	switch (current->segment->roadType)
 	{
+	//Add forward road if main has not reached max length
 	case(ERoadType::Main):
 
+		//Added some variance to distance of roads
 		if (current->roadLength <= maxMainRoadLength + stream.RandRange(-maxMainRoadLength / 10, maxMainRoadLength/ 10))
 		{
 			AddForwardRoad(segQ, current, ERoadType::Main);
 		}
-		//else if (current->segment->roadType == ERoadType::Main)
-		//{
-		//	float decider = stream.RandRange(0, 100);
-		//	//UE_LOG(LogTemp, Display, TEXT("HERE! %f"), decider);
-		//	if (decider > 10)
-		//	{
-		//		UE_LOG(LogTemp, Display, TEXT("Splitting!"));
-		//		AddRoadSide(segQ, current, true, ERoadType::Main);
-		//		AddRoadSide(segQ, current, false, ERoadType::Main);
-		//	}
-		//	//chance road continues
-		//	if (decider < 90)
-		//	{
-		//		UE_LOG(LogTemp, Display, TEXT("Onwards!"));
-		//		current->roadLength = 1;
-		//		AddForwardRoad(segQ, current, ERoadType::Main);
-		//	}
-		//}
 		break;
-
+	//Add forward road
 	case(ERoadType::Secondary):
 
 		if (current->roadLength <= MaxSecondaryRoadLength)
@@ -119,7 +104,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 			AddForwardRoad(segQ, current, ERoadType::Secondary);
 		}
 		break;
-
+	//Add forward road
 	case(ERoadType::Coastal):
 		UE_LOG(LogTemp, Display, TEXT("Coastal!"));
 		if (current->roadLength <= maxCoastalRoadLength)
@@ -129,17 +114,18 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		break;
 	}
 
-	UE_LOG(LogTemp, Display, TEXT("ROAD LENGTH - %i"), current->roadLength);
-	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary && mainLengthBeforeIntersection < current->roadLength)
+	//Road branching logic
+	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Main && mainLengthBeforeIntersection < current->roadLength)
 	{
-		UE_LOG(LogTemp, Display, TEXT("WE IN!"));
+		//Flip flop for deciding left or right road to be added
 		if (randFloat() < 0.5)
 		{
+			//Chance for main or secondary road to be added
 			if (stream.RandRange(0, 100) > 30)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Main - Left"));
 				AddRoadSide(segQ, current, true, ERoadType::Main);
-			}
+			}																							//SHOULD BE A FUNCTION REUSED LOGIC
 			else
 			{
 				AddRoadSide(segQ, current, true, ERoadType::Secondary);
@@ -158,6 +144,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 			}
 		}
 	}
+	//Secondary road branching
 	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary && secondaryLengthBeforeIntersection < current->roadLength)
 	{
 		if (randFloat() < 0.5)
@@ -181,19 +168,25 @@ void ARoadGenerator::AddForwardRoad(TArray<FProposedRoad*>& segQ, FProposedRoad*
 
 	FRoad* prevSeg = previous->segment;
 
+	//Set the correct intensity based on road type
 	intensity = newType == ERoadType::Main ? mainRoadIntensity : secondaryRoadIntensity;
 
+	//Sprinkles some randomness on the rotation
 	newPropRoad->varianceRotor = previous->varianceRotor + FRotator(0, intensity * (randFloat() - 0.5f), 0);
+	//Sets rotator based on previous
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor;
 
+	//Initialise road with new values
 	newSeg->Start = prevSeg->End;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = prevSeg->End - prevSeg->Start;
 	newSeg->roadType = newType;
 	
+	//Defines new segment
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = previous->roadLength + 1;
 
+	//Pushed road to queue
 	segQ.Push(newPropRoad);
 }
 
@@ -206,19 +199,25 @@ void ARoadGenerator::AddRoadSide(TArray<FProposedRoad*>& segQ, FProposedRoad* pr
 
 	intensity = newType == ERoadType::Main ? mainRoadIntensity : secondaryRoadIntensity;
 
+	//Sprinles some randomness
 	newPropRoad->varianceRotor = FRotator(0, intensity * (randFloat() - 0.5f), 0);
+	//Sets direction based on left/right
 	FRotator direction = left ? FRotator(0, 270, 0) : FRotator(0, 90, 0);
 	UE_LOG(LogTemp, Display, TEXT("Direction - %f"), direction.Yaw);
 	newPropRoad->rotator = previous->rotator + newPropRoad->varianceRotor + direction;
 
+	//Initialise new road values
 	FVector offsetDirection = newPropRoad->rotator.RotateVector(FVector(200, 0, 0));
 	newSeg->Start = (prevSeg->End - prevSeg->Start) / 2 + prevSeg->Start + offsetDirection;
 	newSeg->End = newSeg->Start + newPropRoad->rotator.RotateVector(roadStep);
 	newSeg->turnPoint = newSeg->End - newSeg->Start;
 	newSeg->roadType = newType;
 
+	//Defines new segment
 	newPropRoad->segment = newSeg;
 	newPropRoad->roadLength = 1;
+	
+	//Pushes new segment to the queue
 	segQ.Push(newPropRoad);
 
 }
@@ -240,7 +239,7 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 		FVector finalMid = (road.End - road.Start) / 2 + road.Start;
 		
 		//Check distance based on road size - magic number here fix me!!!!!!!
-		if (FVector::Dist(finalMid, propMid) < 150)
+		if (FVector::Dist(finalMid, propMid) < 150)												//TERRIBLE DIST CHECK MAKE BETTER!!!!!!!
 		{
 			UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
 			return false;
@@ -275,7 +274,8 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 						
 					}
 
-					if (checker >= 10)
+					//ensures all volumes have been checked
+					if (checker >= 10)					//MAGIC NUMBER
 					{
 						current->segment->turnPoint = current->segment->End - current->segment->Start;
 						current->roadLength = current->segment->roadType == ERoadType::Coastal ? current->roadLength++ : 0;
