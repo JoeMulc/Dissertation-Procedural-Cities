@@ -129,9 +129,10 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		break;
 	}
 
-	
-	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary)
+	UE_LOG(LogTemp, Display, TEXT("ROAD LENGTH - %i"), current->roadLength);
+	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType != ERoadType::Secondary && mainLengthBeforeIntersection < current->roadLength)
 	{
+		UE_LOG(LogTemp, Display, TEXT("WE IN!"));
 		if (randFloat() < 0.5)
 		{
 			if (stream.RandRange(0, 100) > 30)
@@ -157,7 +158,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 			}
 		}
 	}
-	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary)
+	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary && secondaryLengthBeforeIntersection < current->roadLength)
 	{
 		if (randFloat() < 0.5)
 		{

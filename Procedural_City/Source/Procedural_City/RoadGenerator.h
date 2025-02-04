@@ -64,6 +64,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadBranchChance = 0.1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadIntensity = 0.1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") int32 mainLengthBeforeIntersection = 50;
 	
 	float intensity = 0.01;
 
@@ -72,6 +74,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 0.1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadIntensity = 0.1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") int32 secondaryLengthBeforeIntersection = 20;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|CoastalRoads") float maxCoastalRoadLength = 2500;
