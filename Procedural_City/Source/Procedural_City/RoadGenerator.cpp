@@ -33,6 +33,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 	TArray<FRoad> finalNetwork;
 
 	TArray<FProposedRoad*> propQ;
+	TArray<FProposedRoad*> secondQ;
 
 	FProposedRoad* initRoad = new FProposedRoad();
 	FRoad* initSeg = new FRoad();
@@ -58,6 +59,11 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		propQ.Pop();
 
+		if (current->segment->roadType == ERoadType::Secondary && current->roadLength > 1)
+		{
+			secondQ.Push(current);
+		}
+
 		//Check constraints for current road
 		if (CheckConstraints(finalNetwork, current, propQ) && (current->segment->roadType != ERoadType::Secondary || mainRoadsComplete == true || current->roadLength == 1))
 		{
@@ -68,17 +74,27 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		}
 
-		delete(current->segment);
-		delete(current);
 
 		if (propQ.Num() == 0 && mainCheck == false)
 		{
 			UE_LOG(LogTemp, Display, TEXT("We in here!"));
 			mainRoadsComplete = true;
 			mainCheck = true;
+			UE_LOG(LogTemp, Display, TEXT("Bongin! - %i"), propQ.Top()->roadLength);
+			//while (secondQ.Num() != 0)
+			//{
+			//	//propQ.Push(secondQ.Top());
+			//	UE_LOG(LogTemp, Display, TEXT("Bongin! - %i"), secondQ.Top()->roadLength);
+			//	propQ.Push(secondQ.Top());
+			//	secondQ.Pop();
+			//}
 		}
 
-		UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
+		delete(current->segment);
+		delete(current);
+
+	
+		//UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
 
