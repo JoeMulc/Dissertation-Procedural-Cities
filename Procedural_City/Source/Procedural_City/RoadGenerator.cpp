@@ -59,10 +59,6 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 
 		propQ.Pop();
 
-		if (current->segment->roadType == ERoadType::Secondary && current->roadLength > 1)
-		{
-			secondQ.Push(current);
-		}
 
 		//Check constraints for current road
 		if (CheckConstraints(finalNetwork, current, propQ) && (current->segment->roadType != ERoadType::Secondary || mainRoadsComplete == true || current->roadLength == 1))
@@ -74,7 +70,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 			AddRoads(propQ, current);
 		}
 
-
+		//FOR PRIMARY ROAD FIRST GEN
 		if (propQ.Num() == 0 && mainCheck == false)
 		{
 			UE_LOG(LogTemp, Display, TEXT("We in here!"));
@@ -89,9 +85,17 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 			}
 		}
 
-		
-		
-	
+		//FOR PRIMARY ROAD FIRST GEN
+		if (current->segment->roadType == ERoadType::Secondary && current->roadLength > 1)
+		{
+			secondQ.Push(current);
+		}
+		else
+		{
+			delete(current->segment);
+			delete(current);
+		}
+
 		//UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
@@ -135,45 +139,46 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 	}
 
 	//Road branching logic
-	if (randFloat() < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Main && mainLengthBeforeIntersection < current->roadLength)
+	if (stream.RandRange(0, 100) < mainRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Main && mainLengthBeforeIntersection < current->roadLength)
 	{
-		//Flip flop for deciding left or right road to be added
-		if (randFloat() < 0.5)
+		//Chance for main or secondary road to be added
+		if (stream.RandRange(0, 100) < intersectionIsMainChance)			
 		{
-			//Chance for main or secondary road to be added
-			if (stream.RandRange(0, 100) > 90)
+			if (stream.RandRange(0, 100) < mainTwoRoadJunctionChance)
 			{
-				UE_LOG(LogTemp, Display, TEXT("Main - Left"));
 				AddRoadSide(segQ, current, true, ERoadType::Main);
-			}																							//SHOULD BE A FUNCTION REUSED LOGIC
-			else
-			{
-				AddRoadSide(segQ, current, true, ERoadType::Secondary);
-			}
-		}
-		else
-		{
-			if (stream.RandRange(0, 100) > 90)
-			{
-				UE_LOG(LogTemp, Display, TEXT("Main - Right"));
 				AddRoadSide(segQ, current, false, ERoadType::Main);
 			}
 			else
 			{
+				AddRoadSide(segQ, current, randFloat() > 0.5 ? true : false, ERoadType::Main);
+			}
+		}																		
+		else
+		{
+			if (stream.RandRange(0, 100) < secondaryTwoRoadJunctionChance)
+			{
+				AddRoadSide(segQ, current, true, ERoadType::Secondary);
 				AddRoadSide(segQ, current, false, ERoadType::Secondary);
 			}
+			else
+			{
+				AddRoadSide(segQ, current, randFloat() > 0.5 ? true : false, ERoadType::Secondary);
+			}
 		}
+
 	}
 	//Secondary road branching
-	else if (randFloat() < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary && secondaryLengthBeforeIntersection < current->roadLength)
+	else if (stream.RandRange(0, 100) < secondaryRoadBranchChance && branchCounter <= branchCap && current->segment->roadType == ERoadType::Secondary && secondaryLengthBeforeIntersection < current->roadLength)
 	{
-		if (randFloat() < 0.5)
+		if (stream.RandRange(0, 100) < secondaryTwoRoadJunctionChance)
 		{
 			AddRoadSide(segQ, current, true, ERoadType::Secondary);
+			AddRoadSide(segQ, current, false, ERoadType::Secondary);
 		}
 		else
 		{
-			AddRoadSide(segQ, current, false, ERoadType::Secondary);
+			AddRoadSide(segQ, current, randFloat() > 0.5 ? true : false, ERoadType::Secondary);
 		}
 	}
 	

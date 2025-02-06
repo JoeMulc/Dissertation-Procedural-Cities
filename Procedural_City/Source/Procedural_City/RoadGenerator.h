@@ -59,23 +59,31 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|General") int32 branchCap = 15;
 
 	int32 branchCounter = 0;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float maxMainRoadLength = 50;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadBranchChance = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadBranchChance = 1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") float mainRoadIntensity = 0.1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads") int32 mainLengthBeforeIntersection = 50;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads|Advanced") int32 mainLengthBeforeIntersection = 50;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads|Advanced") int32 intersectionIsMainChance = 30;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Main Roads|Advanced") int32 mainTwoRoadJunctionChance = 10;
+
 	
 	float intensity = 0.01;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float MaxSecondaryRoadLength = 15;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 0.1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadBranchChance = 1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") float secondaryRoadIntensity = 0.1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads") int32 secondaryLengthBeforeIntersection = 20;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads|Advanced") int32 secondaryLengthBeforeIntersection = 20;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|Secondary Roads|Advanced") int32 secondaryTwoRoadJunctionChance = 90;
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Road Generation|CoastalRoads") float maxCoastalRoadLength = 2500;
