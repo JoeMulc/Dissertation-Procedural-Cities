@@ -69,9 +69,9 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		{
 			//if passes constraint check push to the final network
 			finalNetwork.Push(*current->segment);
+
 			//Add roads the to the road
 			AddRoads(propQ, current);
-
 		}
 
 
@@ -80,19 +80,17 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 			UE_LOG(LogTemp, Display, TEXT("We in here!"));
 			mainRoadsComplete = true;
 			mainCheck = true;
-			UE_LOG(LogTemp, Display, TEXT("Bongin! - %i"), propQ.Top()->roadLength);
-			//while (secondQ.Num() != 0)
-			//{
-			//	//propQ.Push(secondQ.Top());
-			//	UE_LOG(LogTemp, Display, TEXT("Bongin! - %i"), secondQ.Top()->roadLength);
-			//	propQ.Push(secondQ.Top());
-			//	secondQ.Pop();
-			//}
+			while (secondQ.Num() != 0)
+			{
+				//propQ.Push(secondQ.Top());
+				UE_LOG(LogTemp, Display, TEXT("Bongin! - %i"), secondQ.Top()->roadLength);
+				propQ.Push(secondQ.Top());
+				secondQ.Pop();
+			}
 		}
 
-		delete(current->segment);
-		delete(current);
-
+		
+		
 	
 		//UE_LOG(LogTemp, Display, TEXT("Q size - %i"), propQ.Num());
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
@@ -143,7 +141,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		if (randFloat() < 0.5)
 		{
 			//Chance for main or secondary road to be added
-			if (stream.RandRange(0, 100) > 30)
+			if (stream.RandRange(0, 100) > 90)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Main - Left"));
 				AddRoadSide(segQ, current, true, ERoadType::Main);
@@ -155,7 +153,7 @@ void ARoadGenerator::AddRoads(TArray<FProposedRoad*>& segQ, FProposedRoad* curre
 		}
 		else
 		{
-			if (stream.RandRange(0, 100) > 80)
+			if (stream.RandRange(0, 100) > 90)
 			{
 				UE_LOG(LogTemp, Display, TEXT("Main - Right"));
 				AddRoadSide(segQ, current, false, ERoadType::Main);
