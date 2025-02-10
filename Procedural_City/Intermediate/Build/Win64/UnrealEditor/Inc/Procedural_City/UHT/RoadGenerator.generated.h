@@ -23,6 +23,7 @@ struct FRoad;
 template<> PROCEDURAL_CITY_API UScriptStruct* StaticStruct<struct FRoad>();
 
 #define FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execReset); \
 	DECLARE_FUNCTION(execGenerateRoads);
 
 

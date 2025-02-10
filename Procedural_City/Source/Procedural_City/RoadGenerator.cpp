@@ -100,6 +100,9 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 		//UE_LOG(LogTemp, Display, TEXT("Rand - %f"), randFloat());
 	}
 
+	mainRoadsComplete = false;
+	mainCheck = false;
+
 	UE_LOG(LogTemp, Warning, TEXT("Finished!"));
 	return finalNetwork;
 }
@@ -322,6 +325,11 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 	}
 
 	return true;
+}
+
+void ARoadGenerator::Reset()
+{
+
 }
 
 float ARoadGenerator::randFloat()

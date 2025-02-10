@@ -217,12 +217,42 @@ DEFINE_FUNCTION(ARoadGenerator::execGenerateRoads)
 }
 // End Class ARoadGenerator Function GenerateRoads
 
+// Begin Class ARoadGenerator Function Reset
+struct Z_Construct_UFunction_ARoadGenerator_Reset_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "RoadGenerator.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARoadGenerator_Reset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARoadGenerator, nullptr, "Reset", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARoadGenerator_Reset_Statics::Function_MetaDataParams), Z_Construct_UFunction_ARoadGenerator_Reset_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ARoadGenerator_Reset()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARoadGenerator_Reset_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ARoadGenerator::execReset)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Reset();
+	P_NATIVE_END;
+}
+// End Class ARoadGenerator Function Reset
+
 // Begin Class ARoadGenerator
 void ARoadGenerator::StaticRegisterNativesARoadGenerator()
 {
 	UClass* Class = ARoadGenerator::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GenerateRoads", &ARoadGenerator::execGenerateRoads },
+		{ "Reset", &ARoadGenerator::execReset },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -340,6 +370,7 @@ struct Z_Construct_UClass_ARoadGenerator_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ARoadGenerator_GenerateRoads, "GenerateRoads" }, // 4179671619
+		{ &Z_Construct_UFunction_ARoadGenerator_Reset, "Reset" }, // 545921767
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -434,10 +465,10 @@ struct Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGene
 		{ FRoad::StaticStruct, Z_Construct_UScriptStruct_FRoad_Statics::NewStructOps, TEXT("Road"), &Z_Registration_Info_UScriptStruct_Road, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FRoad), 55979343U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 2553380784U) },
+		{ Z_Construct_UClass_ARoadGenerator, ARoadGenerator::StaticClass, TEXT("ARoadGenerator"), &Z_Registration_Info_UClass_ARoadGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARoadGenerator), 1399903437U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_62899907(TEXT("/Script/Procedural_City"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_1851143530(TEXT("/Script/Procedural_City"),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Procedural_City_Source_Procedural_City_RoadGenerator_h_Statics::EnumInfo));

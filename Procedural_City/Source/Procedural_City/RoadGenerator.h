@@ -106,6 +106,8 @@ public:
 
 	bool CheckGlobalConstraints(TArray<FRoad> finalNetwork, FProposedRoad* current, TArray<FProposedRoad*>& segQ);
 
+	UFUNCTION(BlueprintCallable) void Reset();
+
 	float randFloat();
 
 
