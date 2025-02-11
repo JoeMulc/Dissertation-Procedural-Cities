@@ -103,7 +103,7 @@ TArray<FRoad> ARoadGenerator::GenerateRoads()
 	mainRoadsComplete = false;
 	mainCheck = false;
 
-	UE_LOG(LogTemp, Warning, TEXT("Finished!"));
+	UE_LOG(LogTemp, Warning, TEXT("Finished! Woohoo!"));
 	return finalNetwork;
 }
 
