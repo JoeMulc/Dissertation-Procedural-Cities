@@ -265,12 +265,32 @@ bool ARoadGenerator::CheckGlobalConstraints(TArray<FRoad> finalNetwork, FPropose
 	{
 		//get centre of final road to be compared
 		FVector finalMid = (road.End - road.Start) / 2 + road.Start;
-		
+
 		//Check distance based on road size - magic number here fix me!!!!!!!
-		if (FVector::Dist(finalMid, propMid) < 150)												//TERRIBLE DIST CHECK MAKE BETTER!!!!!!!
+		switch (current->segment->roadType)
 		{
-			UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
-			return false;
+		case(ERoadType::Secondary):
+			if (road.roadType == ERoadType::Main)														//I DESPISE THIS DIST CHECK
+			{
+				if (FVector::Dist(finalMid, propMid) < 200)												//TERRIBLE DIST CHECK MAKE BETTER!!!!!!!
+				{
+					UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
+					return false;
+				}
+			}
+			else if (FVector::Dist(finalMid, propMid) < 150)												//TERRIBLE DIST CHECK MAKE BETTER!!!!!!!
+			{
+				UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
+				return false;
+			}
+			break;
+		default:
+			if (FVector::Dist(finalMid, propMid) < 150)												//TERRIBLE DIST CHECK MAKE BETTER!!!!!!!
+			{
+				UE_LOG(LogTemp, Display, TEXT("OVERLAP"));
+				return false;
+			}
+			break;
 		}
 	}
 														//REALLY SHOULD BE CHECKING FOR NULLPTRS

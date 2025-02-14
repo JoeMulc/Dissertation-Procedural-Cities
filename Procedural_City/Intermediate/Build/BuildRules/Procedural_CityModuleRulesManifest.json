@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_City\\Procedural_City.Build.cs",
-		"M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_City.Target.cs",
-		"M:\\.Dissertation\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_CityEditor.Target.cs"
+		"D:\\LocalWorkDir\\2100609\\Dissertation-Procedural-City\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_City\\Procedural_City.Build.cs",
+		"D:\\LocalWorkDir\\2100609\\Dissertation-Procedural-City\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_City.Target.cs",
+		"D:\\LocalWorkDir\\2100609\\Dissertation-Procedural-City\\Dissertation-Procedural-Cities\\Procedural_City\\Source\\Procedural_CityEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.3"
 }
